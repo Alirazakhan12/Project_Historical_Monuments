@@ -1,0 +1,14 @@
+
+
+
+
+
+
+Route List:-
+ /homepage
+ /Gallery = Differents zone images
+ /Zone = East zone, West zone , North zone , South zone
+/Sevices = Getting the Hostoric destination by bus or by flight.
+/About us 
+/contact us = Through Email, phone or Google Map 
+/Feedback = stored Local Storage

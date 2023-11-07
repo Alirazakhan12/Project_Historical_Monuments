@@ -1,0 +1,603 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Noto+Serif:wght@800&family=Poppins&family=Roboto+Condensed&family=Roboto+Slab:wght@700&family=Roboto:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* Navbar css */
+#container {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+#logo {
+  font-size: 24px;
+}
+.nav-link {
+  position: relative;
+}
+@media (max-width: 576px) {
+  #logo {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  #logo-img {
+    width: 50px;
+    height: 45px;
+    margin-left: -40px;
+  }
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom;
+}
+
+.dropdown-menu {
+  position: relative;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 20px;
+}
+.dropdown-menu li:hover {
+  display: block;
+}
+
+/* Navbar css End*/
+
+/* Carousal Css */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 610px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../IMAGES/Azadi\ tower\ iran.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#carouselExampleCaptions{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 6px;
+}
+#carousel-item2 {
+  width: 100%;
+  height: 610px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../IMAGES/petra\ jorden\ wonder.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#carousel-item3 {
+  width: 100%;
+  height: 610px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../IMAGES/light\ house\ of\ alexzandria\ wonder.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#carousel-control {
+  top: 220px;
+  bottom: 220px;
+}
+.carousel-caption {
+  position: absolute;
+  transform: translate(-50% -50%);
+  top: 40%;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 35%;
+  }
+}
+
+#caption {
+  font-size: 54px;
+  animation-delay: 2s;
+}
+.caption-p {
+  font-size: 24px;
+}
+#caption-btn {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  padding: 8px 30px 8px 30px;
+}
+
+#search-box {
+  margin: auto;
+  outline: none;
+}
+@media (max-width: 576px) {
+  #caption {
+    font-size: 32px;
+  }
+  .caption-p {
+    font-size: 18px;
+  }
+  #caption-btn {
+    font-size: 14px;
+  }
+  .carousel-caption {
+    top: 38%;
+  }
+}
+@media (max-width: 992px) {
+  #caption {
+    font-size: 42px;
+  }
+  .caption-p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 280px) {
+  #caption {
+    font-size: 28px;
+  }
+  .caption-p {
+    font-size: 16px;
+  }
+  #logo {
+    font-size: 14px;
+  }
+  #logo-img {
+    width: 40px;
+    height: 35px;
+    margin-left: -55px;
+  }
+}
+
+/* Gallery section CSS */
+.title-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-family: "Playfair Display", serif;
+}
+.card {
+  overflow: hidden;
+}
+
+.card:hover .card-img {
+  transform: scale(1.05);
+  transition: 0.4s ease-in-out;
+}
+#gallery-img,
+.gallery-img {
+  position: relative;
+  transform: translate(-50% -50%);
+  justify-content: center;
+  align-items: center;
+}
+#heart,
+#heart2,
+#heart3,
+#heart4,
+#heart5,
+#heart6 {
+  position: absolute;
+  opacity: 0;
+  color: white;
+  font-size: 50px;
+}
+.card-text {
+  opacity: 0.5;
+  font-style: italic;
+}
+
+@media (max-width: 991px) {
+  #qin-img {
+    width: 100%;
+    margin-left: 55%;
+  }
+}
+@media (max-width: 991px) {
+  #naq-img {
+    width: 100%;
+    margin-left: 55%;
+  }
+}
+
+@media (max-width: 576px) {
+  #naq-img,
+  #qin-img {
+    margin: auto;
+  }
+}
+@media (max-width: 576px) {
+  .card,
+  #naq-img,
+  #qin-img {
+    width: 350px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 362px) {
+  .card,
+  #naq-img,
+  #qin-img {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+/*Explore section CSS  */
+
+#card {
+  transition: 0.2s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#card:hover {
+  margin-top: -5px;
+  transition: 0.2s;
+}
+.card-title {
+  opacity: 0.5;
+  font-style: italic;
+}
+
+#caption-2 {
+  color: rgb(52, 152, 219);
+}
+@media (max-width: 992px) {
+  #card-child {
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 200px;
+  }
+  #hide {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  #card {
+    width: 350px;
+    margin: auto;
+  }
+  .card-img-top {
+    height: 260px;
+  }
+  #card {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 400px) {
+  #card {
+    width: 100%;
+    margin: none;
+  }
+}
+
+
+/* feedback section css */
+#_name,
+#_email,
+#_textarea {
+  width: 80%;
+  resize: none;
+}
+.feed-control,
+#feed-label {
+  margin-left: 20px;
+}
+
+/* about us page CSS */
+.about-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sec-title .about-title {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  color: gray;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.sec-title .h2 {
+  position: relative;
+  display: block;
+  font-size: 40px;
+  line-height: 1.28em;
+  color: #222222;
+  font-weight: 600;
+  padding-bottom: 18px;
+}
+
+.sec-title .h2:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: 0px;
+  width: 50px;
+  height: 3px;
+  background-color: #d1d2d6;
+}
+
+.about-section {
+  position: relative;
+  padding-top: 70px;
+  margin-top: 50px;
+}
+
+.about-section .sec-title {
+  margin-bottom: 45px;
+}
+
+@media (max-width: 991px) {
+  .about-section .sec-title {
+    margin-top: 70px;
+  }
+}
+
+.about-section .content-column .inner-column {
+  position: relative;
+  padding-left: 30px;
+}
+
+.about-section .about-text {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #848484;
+  font-weight: 400;
+}
+
+#about-text2 {
+  display: none;
+}
+#readmore:hover {
+  cursor: pointer;
+}
+
+.about-section .image-column .inner-column {
+  position: relative;
+  padding-left: 80px;
+  padding-bottom: 0px;
+}
+
+.about-section .image-column .inner-column:before {
+  content: "";
+  position: absolute;
+  width: calc(50% + 80px);
+  height: calc(100% + 160px);
+  top: -80px;
+  left: -3px;
+  background: transparent;
+  z-index: 0;
+  border: 44px solid gray;
+}
+.about-section .image-column .image-1 {
+  position: relative;
+}
+.about-section .image-column .image-2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.about-section .image-column .image-2 .about-img,
+.about-section .image-column .image-1 .about-img {
+  box-shadow: 0 30px 50px rgba(8, 13, 62, 0.15);
+  border-radius: 24px;
+}
+
+/* contact us CSS */
+
+#u_name,
+#u_email,
+#u_message {
+  width: 90%;
+  border: 1px solid rgba(100, 100, 111, 0.2);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#con-card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 12px;
+  border-radius: 64px 6px 64px 6px;
+}
+#map {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 12px;
+  border-radius: 6px;
+}
+@media (max-width: 768px) {
+  #con-card {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 992px) {
+  #map {
+    margin-top: 18px;
+  }
+}
+
+/* Team section CSS */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgb(52, 152, 219);
+}
+.profile-img:hover {
+  border: 4px solid black;
+  transition: all ease 1s;
+}
+#team,
+#team2,
+#team3 {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 12px;
+  border-radius: 64px 6px 64px 6px;
+}
+
+@media (max-width: 576px) {
+  #team2,
+  #team3 {
+    margin-top: 24px;
+  }
+}
+
+/* footer section CSS */
+
+#footer-logo {
+  margin-top: 34%;
+  margin-bottom: 20px;
+  margin-left: 25%;
+  width: 100px;
+  height: 90px;
+}
+.contact,
+.subscribe {
+  margin-top: 36%;
+}
+#contact-links {
+  margin-top: 10px;
+}
+
+#copy-allright {
+  font-size: 12px;
+}
+#icon:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+#footer-links {
+  text-decoration: none;
+}
+#site-map {
+  text-decoration: none;
+  font-size: 16px;
+}
+@media (max-width: 1198px) {
+  #footer-logo {
+    margin-left: 30%;
+  }
+}
+@media (max-width: 991px) {
+  #footer-logo {
+    margin-left: 20px;
+    margin-top: 80px;
+  }
+}
+@media (max-width: 768px) {
+  #footer-logo {
+    margin-top: 10%;
+    margin-left: 18%;
+  }
+  .contact,
+  .subscribe {
+    margin-top: 10%;
+  }
+}
+
+/* scrolltop btn css */
+#scroll-top {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(52, 152, 219);
+  border-radius: 24px;
+  position: fixed;
+  bottom: 5px;
+  display: none;
+  right: 15px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+}
+#arrow {
+  color: white;
+  font-size: 16px;
+}
+
+/* Sub-website CSS */
+/* East section css */
+#haawa {
+  border-radius: 34px;
+}
+@media (max-width: 991px) {
+  #haawa {
+    margin-top: 80px;
+  }
+}
+
+/* West section Css */
+#azaadi {
+  border-radius: 34px;
+}
+
+/* North section CSS */
+#temple {
+  border-radius: 34px;
+}
+#text {
+  width: 85%;
+}
+.text {
+  opacity: 0.5;
+}
+
+@media (max-width: 767px) {
+  .f-details {
+    margin-top: 50px;
+  }
+}
+
+/* South section Css */
+#musct {
+  border-radius: 34px;
+}
+/* World wonder sectin Css */
+#jorden {
+  border-radius: 34px;
+}
+
+/* services page css */
+
+#s-card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+@media (max-width: 992px) {
+  .card-end {
+    width: 100%;
+    margin-left: 55%;
+  }
+}

@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>West Zone</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-----------External CSS----------- -->
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="icon" href="../IMAGES/logo-.png" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!------- AOS cdn -------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!----=======  Navbar Start =======------->
+    <nav class="navbar navbar-expand-lg p-0 fixed-top">
+      <div class="container-fluid py-1 bg-dark">
+        <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+          <img
+            src="../IMAGES/logo-.png"
+            width="70px"
+            height="60px"
+            alt="logo"
+            id="logo-img"
+          />
+          <span class="text-white">Historical</span>
+          <span class="fw-bold text-primary">Monuments</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white hover-underline-animation"
+                aria-current="page"
+                href="../index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="btn dropdown-toggle text-white border-0 pt-2"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ZONE
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../Website links/East Zone.html"
+                    >EAST ZONE</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../Website links/West Zone.html"
+                    >WEST ZONE</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../Website links/North Zone.html"
+                    >NORTH ZONE</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../Website links/South Zone.html"
+                    >SOUTH ZONE</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../Website links/World wonder.html"
+                    >WORLD WONDER</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white hover-underline-animation"
+                href="../Website links/Services.html"
+                tabindex="-1"
+                aria-disabled="true"
+                >SERVICES</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white hover-underline-animation"
+                href="../Website links/About Us.html"
+                tabindex="-1"
+                aria-disabled="true"
+                >ABOUT</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white hover-underline-animation"
+                href="../Website links/Contact us.html"
+                tabindex="-1"
+                aria-disabled="true"
+                >CONTACT</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white hover-underline-animation"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                data-bs-target="#feedback"
+                data-bs-toggle="modal"
+                >FEEDBACK</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!---===== Navbar End ======---->
+    <br /><br /><br /><br /><br />
+
+    <!-- ======Feedback modal box start===== -->
+    <form action="" onsubmit="submitted()">
+    <div class="modal fade modal-lg" data-bs-backdrop="static" id="feedback">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+              <img
+                src="../IMAGES/logo-.png"
+                width="70px"
+                height="60px"
+                alt="logo"
+                id="logo-img"
+              />
+              <span class="text-dark">Historical</span>
+              <span class="fw-bold text-primary">Monuments</span></a
+            >
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <h4 class="text-center fw-bold">
+              We'd love to hear your <span class="text-primary">Feedback</span>!
+            </h4>
+            <label for="" class="form-label" id="feed-label">Name</label>
+            <input
+              type="text"
+              name=""
+              id="_name"
+              class="form-control feed-control"
+              placeholder="Name"
+            />
+
+            <label for="" class="form-label mt-2" id="feed-label">Email</label>
+            <input
+              type="email"
+              name=""
+              id="_email"
+              class="form-control feed-control"
+              placeholder="Email address"
+            />
+
+            <label for="" class="form-label mt-2" id="feed-label"
+              >Feedback</label
+            >
+            <textarea
+              name="feeback"
+              id="_textarea"
+              cols="30"
+              rows="5"
+              class="form-control feed-control"
+              placeholder="Feedback"
+            ></textarea>
+            <span id="err" class="ms-5"></span>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-dismiss="modal">
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-primary me-5">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+    <!-- ======Feedback modal box End===== -->
+
+    <!-- west section start -->
+    <div class="container">
+      <h1 class="fs-1 fw-bold">
+        Top Historical Monuments in <span class="text-primary"> Iran</span>
+      </h1>
+
+      <div class="row mt-5 mb-3">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <img
+            src="../IMAGES/Azadi tower iran.jpg"
+            width="100%"
+            height="400px"
+            id="azaadi"
+            alt=""
+            title="The Azadi Tower"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          />
+          <br />
+          <span class="fst-italic text">The Azadi Tower</span>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <p>
+            <span class="fw-bold">The Azadi Tower</span>, also known as the
+            "Freedom Tower," is a famous landmark located in Tehran, Iran. It
+            has a significant history and cultural importance in the country.
+            Here is a brief overview of its history: <br />
+
+            <span class="fw-bold">Construction:</span> The construction of the
+            Azadi Tower began in 1966 under the rule of Mohammad Reza Shah
+            Pahlavi, the last Shah of Iran. The tower was built to commemorate
+            the 2,500th anniversary of the Persian Empire, which took place in
+            1971. The tower was designed by architect Hossein Amanat. <br />
+
+            <span class="fw-bold"> Symbolism:</span> The Azadi Tower is not only
+            an architectural marvel but also carries significant symbolism. Its
+            name, "Azadi," means "freedom" in Persian, and the tower was
+            intended to symbolize the country's long history of struggle for
+            independence and freedom. <br />
+
+            <span class="fw-bold"> Architecture:</span> The tower's design is a
+            fusion of both modern and traditional Iranian architecture. <br />
+            <button
+              class="btn btn-primary"
+              data-bs-target="#Azadi"
+              data-bs-toggle="modal"
+            >
+              Learn more
+            </button>
+
+            <!-- ====== modal box Start===== -->
+          </p>
+
+          <div class="modal fade modal-lg" data-bs-backdrop="static" id="Azadi">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+                    <img
+                      src="../IMAGES/logo-.png"
+                      width="70px"
+                      height="60px"
+                      alt="logo"
+                      id="logo-img"
+                    />
+                    <span class="text-dark">Historical</span>
+                    <span class="fw-bold text-primary">Monuments</span></a
+                  >
+                  <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    It stands at a height of approximately 50 meters (164 feet)
+                    and features a distinctive, soaring marble arch with
+                    intricate geometric patterns and Persian calligraphy. <br />
+
+                    <span class="fw-bold">Historical Events:</span> The Azadi
+                    Tower has witnessed several significant events in Iran's
+                    history. It was a focal point for celebrations during the
+                    2,500th anniversary of the Persian Empire and was also used
+                    as a gathering place during important political rallies.
+                    <br />
+
+                    <span class="fw-bold">Post-Revolution:</span> After the
+                    Iranian Revolution of 1979, which led to the overthrow of
+                    the monarchy and the establishment of the Islamic Republic
+                    of Iran, the tower's symbolism evolved. While it still
+                    represents freedom and independence, its meaning has been
+                    interpreted in the context of the new government. <br />
+
+                    <span class="fw-bold">Cultural Significance:</span> Today,
+                    the Azadi Tower remains an important cultural and
+                    architectural symbol in Tehran. It is open to the public,
+                    and visitors can go inside the tower to learn more about its
+                    history and enjoy panoramic views of the city from its upper
+                    levels. In summary, the Azadi Tower in Iran is a prominent
+                    landmark with a history dating back to the 1960s. It was
+                    constructed to commemorate the Persian Empire's 2,500th
+                    anniversary and symbolizes freedom and independence in
+                    Iranian culture. Over the years, it has witnessed
+                    significant historical events and continues to be a symbol
+                    of national pride. &#9827;
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ====== modal box End===== -->
+        </div>
+      </div>
+
+      <div class="row mt-5 mb-3">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <p>
+            <span class="fw-bold">Takht-e Jamshid</span>, also known as
+            Persepolis, is one of the most iconic archaeological sites in Iran.
+            It holds immense historical and cultural significance. Here's an
+            overview of its history: <br />
+
+            <span class="fw-bold">Construction:</span> Persepolis was built
+            during the Achaemenid Empire, specifically during the reign of
+            Darius the Great in the 6th century BCE. It was constructed as the
+            ceremonial capital of the empire and was used primarily for grand
+            celebrations and receptions. <br />
+
+            <span class="fw-bold">Architectural Marvel:</span> The city was an
+            architectural marvel, characterized by grand palaces, impressive
+            gateways, intricate carvings, and vast terraces. It was designed to
+            showcase the power and wealth of the Achaemenid rulers. <br />
+
+            <span class="fw-bold">Ceremonial Use: </span>Persepolis was used for
+            important state rituals, such as the Nowruz (New Year) celebrations,
+            where representatives from various subject nations would come to pay
+            tribute to the Achaemenid kings. <br />
+
+            <button
+              class="btn btn-primary"
+              data-bs-target="#takht"
+              data-bs-toggle="modal"
+            >
+              Learn more
+            </button>
+
+            <!-- ====== modal box Start===== -->
+          </p>
+
+          <div class="modal fade modal-lg" data-bs-backdrop="static" id="takht">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+                    <img
+                      src="../IMAGES/logo-.png"
+                      width="70px"
+                      height="60px"
+                      alt="logo"
+                      id="logo-img"
+                    />
+                    <span class="text-dark">Historical</span>
+                    <span class="fw-bold text-primary">Monuments</span></a
+                  >
+                  <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    <span class="fw-bold"> Sack and Destruction:</span> In 330
+                    BCE, Alexander the Great invaded Persia and captured
+                    Persepolis. The city was subsequently sacked and suffered
+                    significant destruction. The reasons for the destruction are
+                    debated among historians, with some suggesting it was a
+                    deliberate act by Alexander and others attributing it to
+                    accidental fires. <br />
+
+                    <span class="fw-bold">Relevance in Zoroastrianism:</span>
+                    The city had a significant connection to Zoroastrianism, the
+                    ancient religion of Persia. Some of the inscriptions and
+                    carvings at Persepolis reference Ahura Mazda, the supreme
+                    deity in Zoroastrianism. <br />
+
+                    <span class="fw-bold"> Rediscovery:</span> After centuries
+                    of being buried under the earth, Persepolis was rediscovered
+                    by European travelers in the 17th century. Serious
+                    archaeological work began in the 1930s. <br />
+
+                    <span class="fw-bold">NESCO World Heritage Site:</span> In
+                    1979, Persepolis was designated as a UNESCO World Heritage
+                    Site due to its historical and cultural significance. Today,
+                    Persepolis stands as a remarkable testament to the
+                    Achaemenid Empire's grandeur and its architectural
+                    achievements. It offers visitors a glimpse into the ancient
+                    history and culture of Iran and is one of the country's most
+                    important and visited archaeological sites. The site is
+                    known as Takht-e Jamshid in Persian, which is often
+                    translated as the "Throne of Jamshid" or "Throne of
+                    Solomon," reflecting the blending of legends and history in
+                    the region. &#9827;
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ====== modal box End===== -->
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <img
+            src="../IMAGES/Takht jamshed in iran.jpg"
+            width="100%"
+            height="400px"
+            class="rounded"
+            alt=""
+            title="Takht-e Jamshid"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          />
+          <br />
+          <span class="fst-italic text">Takht-e Jamshid</span>
+        </div>
+      </div>
+
+      <div class="row mt-5 mb-3">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <img
+            src="../IMAGES/Takht-e-Soleyman iran.jpg"
+            width="100%"
+            height="400px"
+            class="rounded"
+            alt=""
+            title="Takht-e-Soleyman"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          />
+          <br />
+          <span class="fst-italic text">Takht-e Soleyman</span>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <p>
+            <span class="fw-bold">Takht-e Soleyman</span>, also known as the
+            Throne of Solomon, is an ancient archaeological site located in
+            northwestern Iran. It has a rich history dating back over 2,500
+            years and is known for its historical, cultural, and religious
+            significance. Here's an overview of the history of Takht-e Soleyman:
+            <br />
+
+            <span class="fw-bold">Ancient Origins:</span> Takht-e Soleyman is
+            believed to have been established during the Achaemenid Empire,
+            which ruled Persia from the 6th to the 4th century BCE. The site was
+            originally known as "Shiz" or "Adur Gushnasp" and served as a
+            Zoroastrian fire temple during this period. <br />
+
+            <span class="fw-bold">Zoroastrianism:</span> In Zoroastrianism, the
+            site held great importance due to the presence of a sacred eternal
+            flame that was said to have been burning continuously for centuries.
+            It was considered one of the holiest places in ancient Persia.
+            <br />
+
+            <span class="fw-bold">Sassanian Era:</span> During the Sassanian
+            Empire (3rd to 7th centuries), <br />
+            <button
+              class="btn btn-primary"
+              data-bs-target="#soleymn"
+              data-bs-toggle="modal"
+            >
+              Learn more
+            </button>
+
+            <!-- ====== modal box Start===== -->
+          </p>
+
+          <div
+            class="modal fade modal-lg"
+            data-bs-backdrop="static"
+            id="soleymn"
+          >
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+                    <img
+                      src="../IMAGES/logo-.png"
+                      width="70px"
+                      height="60px"
+                      alt="logo"
+                      id="logo-img"
+                    />
+                    <span class="text-dark">Historical</span>
+                    <span class="fw-bold text-primary">Monuments</span></a
+                  >
+                  <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Takht-e Soleyman underwent significant development. A large
+                    circular wall was constructed around the site, enclosing the
+                    temple complex, a palace, and a lake. The complex was
+                    dedicated to the Zoroastrian fire goddess Anahita. <br />
+
+                    <span class="fw-bold">
+                      Influence of Abrahamic Religions:</span
+                    >
+                    With the spread of Abrahamic religions in the region,
+                    including Christianity and Islam, Takht-e Soleyman's
+                    significance evolved. The site became associated with King
+                    Solomon in Islamic tradition, thus the name "Takht-e
+                    Soleyman" (Throne of Solomon). <br />
+
+                    <span class="fw-bold">UNESCO World Heritage Site:</span> In
+                    2003, Takht-e Soleyman was designated as a UNESCO World
+                    Heritage Site due to its historical and cultural
+                    significance. It represents a unique blend of religious and
+                    architectural elements from various periods of Iran's
+                    history. Today, Takht-e Soleyman is a popular tourist
+                    destination, attracting visitors interested in exploring its
+                    ancient ruins, learning about its history, and appreciating
+                    its architectural and cultural heritage. It stands as a
+                    testament to the rich and diverse history of Iran and its
+                    contributions to world heritage.&#9827;
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ====== modal box End===== -->
+          
+        </div>
+      </div>
+
+      <div class="row mt-5 mb-3">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <p>
+            <span class="fw-bold">The Shah Mosque</span>, also known as Imam
+            Mosque, is a famous historical and architectural landmark located in
+            Isfahan, Iran. It has a rich history and is renowned for its
+            stunning Islamic architecture. Here's an overview of its history:
+            <br />
+
+            <span class="fw-bold">Construction:</span> The Shah Mosque was built
+            during the Safavid dynasty, which ruled Persia (Iran) from the 16th
+            to the 18th century. Construction of the mosque began in 1611 during
+            the reign of Shah Abbas I, one of the most significant rulers of the
+            Safavid Empire. <br />
+
+            <span class="fw-bold"> Architectural Style:</span> The mosque is a
+            masterpiece of Persian Islamic architecture and is considered one of
+            the finest examples of Islamic art and design. It features a
+            stunning combination of traditional Iranian architecture and Safavid
+            innovations. The mosque's tilework, calligraphy, and intricate
+            geometric designs are particularly noteworthy. <br />
+
+            <span class="fw-bold">Architect:</span> The primary architect
+            responsible for the design
+            <br />
+            <button
+              class="btn btn-primary"
+              data-bs-target="#shah-mosque"
+              data-bs-toggle="modal"
+            >
+              Learn more
+            </button>
+
+            <!-- ====== modal box Start===== -->
+
+          </p>
+
+          <div
+            class="modal fade modal-lg"
+            data-bs-backdrop="static"
+            id="shah-mosque"
+          >
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+                    <img
+                      src="../IMAGES/logo-.png"
+                      width="70px"
+                      height="60px"
+                      alt="logo"
+                      id="logo-img"
+                    />
+                    <span class="text-dark">Historical</span>
+                    <span class="fw-bold text-primary">Monuments</span></a
+                  >
+                  <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    and construction of the Shah Mosque was Ali Akbar Isfahani,
+                    who was a prominent architect of the Safavid era. His design
+                    incorporated elements of Persian architecture, including the
+                    use of blue tiles, which have become synonymous with the
+                    mosque's appearance. <br />
+
+                    <span class="fw-bold">Religious Significance:</span> The
+                    Shah Mosque served as a place of worship for the people of
+                    Isfahan and played a crucial role in the spiritual and
+                    cultural life of the city. It also functioned as a center
+                    for religious and educational activities. <br />
+
+                    <span class="fw-bold">UNESCO World Heritage Site:</span> The
+                    Shah Mosque, along with other historical structures in
+                    Isfahan, was designated as a UNESCO World Heritage Site in
+                    1979. It is part of the larger Naghsh-e Jahan Square
+                    complex, which includes several other important historical
+                    and architectural landmarks. Today, the Shah Mosque
+                    continues to be a popular tourist attraction, drawing
+                    visitors from around the world who are captivated by its
+                    beauty, history, and architectural significance. It stands
+                    as a testament to the rich cultural and artistic heritage of
+                    Iran and the Safavid dynasty's contributions to Persian
+                    architecture.&#9827;
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ====== modal box End===== -->
+
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <img
+            src="../IMAGES/shah-mosque5.jpg"
+            width="100%"
+            height="400px"
+            class="rounded"
+            alt=""
+            title="shah-mosque"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          />
+          <br />
+          <span class="fst-italic text">The Shah Mosque</span>
+        </div>
+      </div>
+    </div>
+    <!-- West section End -->
+
+    <!-- =====Footer section Start ======--->
+    <footer class="footer">
+      <div class="container-fluid bg-dark p-0">
+        <div class="container bg-dark">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <img src="../IMAGES/logo-.png" alt="logo" id="footer-logo" />
+              <br />
+              <span class="text-white fs-3">Historical</span>
+              <span class="fw-bold text-primary fs-3">Monuments</span>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="contact p-0">
+                <h1 class="text-white fs-5 mb-4" id="footer-head">
+                  Contact Us
+                </h1>
+                <a href="#" id="footer-links"
+                  ><li class="text-white list-unstyled" id="contact-links">
+                    <i class="fa fa-location-arrow"></i>&emsp;Apwa Complex
+                    Garden East Karachi
+                  </li></a
+                >
+                <a href="mailto:Historicalmonuments.com" id="footer-links"
+                  ><li class="text-white list-unstyled" id="contact-links">
+                    <i class="fa fa-envelope"></i>&emsp;Historicalmonuments.com
+                  </li></a
+                >
+                <li class="text-white list-unstyled" id="contact-links">
+                  <i class="fa fa-phone"></i>&emsp;031182888888
+                </li>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="subscribe">
+                <a
+                  href="../History in PDF/Site map.docx"
+                  class="text-white"
+                  id="site-map"
+                  >Site-map</a
+                >
+                <br /><br />
+                <h1 class="text-white fs-5" id="footer-head">Subscribe</h1>
+                <input
+                  type="email"
+                  name=""
+                  id="sub_email"
+                  class="form-control mt-1"
+                  placeholder="Email"
+                  required=""
+                />
+                <button class="btn btn-primary mt-4" onclick="subscribe()">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-5">
+            <a href="https://web.facebook.com/" target="_blank"
+              ><img
+                src="../IMAGES/facebook-icon.png"
+                width="60px"
+                height=""
+                alt=""
+                id="icon"
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img
+                src="../IMAGES/instagram-icon.png"
+                width="60px"
+                height=""
+                alt=""
+                id="icon"
+            /></a>
+            <a href="https://twitter.com/" target="_blank"
+              ><img
+                src="../IMAGES/twitter-icon.png"
+                width="60px"
+                height=""
+                alt=""
+                id="icon"
+            /></a>
+          </div>
+          <hr class="text-white" />
+          <div class="text-center">
+            <span class="text-white" id="copy-all"
+              >&copy;All Right Reserved</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =====Footer section End ======--->
+
+    <!-- jquery cdn start -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery cdn end -->
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ======AOS  Animation on Scroll ======= -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- ======AOS Animation on Scroll ======= -->
+
+   <script src="../JAVASCRIPT/script.js"></script>
+  </body>
+</html>

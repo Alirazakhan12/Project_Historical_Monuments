@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Services</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-----------External CSS----------- -->
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="icon" href="../IMAGES/logo-.png">
+
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!------- AOS cdn -------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+ <!----=======  Navbar Start =======------->
+ <nav class="navbar navbar-expand-lg p-0 fixed-top">
+  <div class="container-fluid py-1 bg-dark">
+    <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+     <img src="../IMAGES/logo-.png" width="70px" height="60px" alt="logo" id="logo-img">
+    <span class="text-white ">Historical</span> <span class="fw-bold text-primary">Monuments</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse me-5 "  id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link text-white hover-underline-animation" aria-current="page" href="../index.html">HOME</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="btn dropdown-toggle text-white  border-0 pt-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            ZONE
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="../Website links/East Zone.html">EAST ZONE</a></li>
+            <li><a class="dropdown-item" href="../Website links/West Zone.html" >WEST ZONE</a></li>
+           
+            <li><a class="dropdown-item" href="../Website links/North Zone.html" >NORTH ZONE</a></li>
+            <li><a class="dropdown-item" href="../Website links/South Zone.html" >SOUTH ZONE</a></li>
+            <li><a class="dropdown-item" href="../Website links/World wonder.html" >WORLD WONDER</a></li>
+          </ul>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link text-white hover-underline-animation"  tabindex="-1" aria-disabled="true" >SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white hover-underline-animation" href="../Website links/About Us.html" tabindex="-1" aria-disabled="true" >ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white hover-underline-animation" href="../Website links/Contact us.html" tabindex="-1" aria-disabled="true" >CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white hover-underline-animation" href="#" tabindex="-1" aria-disabled="true" data-bs-target="#feedback" data-bs-toggle="modal">FEEDBACK</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ <!---===== Navbar End ======---->
+ <br><br><br>
+
+ <!-- ======Feedback modal box start===== -->
+ <form action="" onsubmit="submitted()">
+ <div class="modal fade modal-lg" data-bs-backdrop="static" id="feedback">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+          <img src="../IMAGES/logo-.png" width="70px" height="60px" alt="logo" id="logo-img">
+         <span class="text-dark ">Historical</span> <span class="fw-bold text-primary">Monuments</span></a> 
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h4 class="text-center  fw-bold">We'd love to hear your <span class="text-primary">Feedback</span>!</h4>    
+        <label for="" class="form-label  " id="feed-label">Name</label> 
+        <input type="text" name="" id="_name" class="form-control feed-control" placeholder="Name"> 
+
+        <label for="" class="form-label  mt-2" id="feed-label">Email</label> 
+        <input type="email" name="" id="_email" class="form-control feed-control" placeholder="Email address">
+
+        <label for="" class="form-label mt-2" id="feed-label">Feedback</label> 
+        <textarea name="feeback" id="_textarea" cols="30" rows="5" class="form-control feed-control" placeholder="Feedback"></textarea>
+        <span id="err"></span>
+      </div>
+      <div class="modal-footer">
+      <button class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
+      <button type="submit" class="btn btn-primary me-5">Submit</button>
+      </div>
+    </div>
+  </div>
+ </div> 
+ </form>
+ <!-- ======Feedback modal box End===== -->
+
+
+ <!-- =====Advertise section Start ======--->
+ <section id="historical-monuments" class="container mt-5">
+  <h1 class="title text-uppercase ps-2 fw-bold">
+   Explore <span id="caption-2">Historical Monuments</span>
+ </h1>
+  <div class="row">
+      <!-- Monument 1 -->
+      <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card border-0" id="card">
+              <img src="../IMAGES/taj mahal - 1.jpg" class="card-img-top" width="100%" height="250px" alt="">
+              <div class="card-body">
+                  <h5 class="card-title">Tajmahal in india</h5>
+                  <p>The Taj Mahal is one of the most iconic and celebrated monuments in the world, known for its exquisite beauty and historical significance. It is located in Agra, India,</p>
+                  <a href="#" class="btn btn-primary" data-bs-target="#tajmahal" data-bs-toggle="modal">Learn More</a>
+              </div>
+          </div>
+      </div>
+      <!-- Monument 2 -->
+      <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card border-0" id="card">
+              <img src="../IMAGES/qin-shi-huang-2.jpg" class="card-img-top" width="100%" height="250px" alt="">
+              <div class="card-body">
+                  <h5 class="card-title">Qin Shi Huang Tomb</h5>
+                  <p >Qin Shi Huang was a significant figure in Chinese history and is best known for being the first emperor of the
+                   Qin Dynasty. His name, "Qin Shi Huang," means "First
+                   Emperor of Qin.".</p>
+                  <a href="#" class="btn btn-primary" data-bs-target="#Qin-Shi-Huang" data-bs-toggle="modal">Learn More</a>
+              </div>
+          </div>
+      </div>
+      <!-- Monument 3 -->
+      <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card border-0 card-end" id="card">
+              <img src="../IMAGES/Azadi tower iran.jpg" class="card-img-top" width="100%" height="250px" alt="Monument 3">
+              <div class="card-body">
+                  <h5 class="card-title">The Azadi Tower</h5>
+                  <p>The Azadi Tower, also known as the "Freedom Tower," is a famous landmark located in Tehran, Iran. It has a significant history and cultural importance in the country.</p>
+                  <a href="#" class="btn btn-primary" data-bs-target="#azadi-tower" data-bs-toggle="modal">Learn More</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+ <!-- ======modal box start===== -->
+ <div class="modal fade modal-lg" data-bs-backdrop="static" id="tajmahal">
+  <div class="modal-dialog  modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+          <img
+            src="../IMAGES/logo-.png"
+            width="70px"
+            height="60px"
+            alt="logo"
+            id="logo-img"
+          />
+          <span class="text-dark">Historical</span>
+          <span class="fw-bold text-primary">Monuments</span></a
+        >
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body ms-2">
+       <h1>The Taj Mahal</h1>
+       <p>
+        The Taj Mahal is one of the most iconic and celebrated monuments
+        in the world, known for its exquisite beauty and historical
+        significance. It is located in Agra, India, and here is a brief
+        history of the Taj Mahal: <br />
+
+        <span class="fw-bold">Construction:</span> <br />
+
+        The Taj Mahal was built during the 17th century by the Mughal
+        Emperor Shah Jahan. Construction began in 1632 and was completed
+        in 1648, with additional work on the surrounding complex
+        continuing for several more years. The monument was commissioned
+        as a mausoleum to house the tomb of Shah Jahan's favorite wife,
+        Mumtaz Mahal, who had died during childbirth in 1631. The Taj
+        Mahal also contains the tomb of Shah Jahan himself, who was buried
+        there after his death in 1666. <br />
+        <span class="fw-bold">Architectural Style:</span> <br />
+
+        The Taj Mahal is a masterpiece of Mughal architecture, which is a
+        fusion of Persian, Islamic, and Indian architectural styles. It is
+        renowned for its perfect symmetry and graceful proportions. The
+        main building is constructed primarily of white marble and is
+        adorned with intricate inlay work of semi-precious stones,
+        calligraphy, and decorative motifs. The central dome is one of the
+        most striking features of the Taj Mahal. It reaches a height of 73
+        meters (240 feet) and is surrounded by four smaller domes. <br />
+        <span class="fw-bold">Significance:</span> <br />
+
+        The Taj Mahal is a symbol of love and is often described as one of
+        the most beautiful expressions of love in the world. Shah Jahan
+        built it as a tribute to his beloved wife, Mumtaz Mahal, whom he
+        held in great esteem. It is also considered an architectural
+        marvel and a testament to the grandeur of the Mughal Empire during
+        its peak. <br />
+        <span class="fw-bold">UNESCO World Heritage Site:</span> <br />
+
+        The Taj Mahal was designated as a UNESCO World Heritage Site in
+        1983 in recognition of its cultural and historical significance.
+        Tourism and Global Icon: The Taj Mahal is a major tourist
+        attraction and is visited by millions of tourists from around the
+        world each year. It is often regarded as one of the Seven Wonders
+        of the World and is featured prominently in countless works of
+        literature, art, and popular culture. &#9827;
+      </p> World and is featured prominently in countless works of literature, art, and popular culture. ♣</p>
+  </p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-dismiss="modal">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ====== modal box End===== -->
+
+ <!-- ======modal box start===== -->
+ <div class="modal fade modal-lg" data-bs-backdrop="static" id="Qin-Shi-Huang">
+  <div class="modal-dialog  modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+          <img
+            src="../IMAGES/logo-.png"
+            width="70px"
+            height="60px"
+            alt="logo"
+            id="logo-img"
+          />
+          <span class="text-dark">Historical</span>
+          <span class="fw-bold text-primary">Monuments</span></a
+        >
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body ms-2">
+       <h1>Qin Shi Huang</h1>
+       <p>Qin Shi Huang, often simply referred to as Qin Shi Huangdi, was a significant figure in Chinese history and the first emperor of the Qin Dynasty. His reign and contributions to China had a profound and lasting impact on the country's history. Here is an overview of Qin Shi Huang and his historical significance: <br>
+
+        <span class="fw-bold">   Early Life:</span> <br>
+           
+           Qin Shi Huang was born in 259 BC as Ying Zheng. He became the King of Qin at the age of 13 after the death of his father, King Zhuangxiang of Qin.
+           Unification of China:
+           
+           One of the most significant achievements of Qin Shi Huang was the unification of China. Prior to his rule, China was divided into several warring states during a period known as the Warring States Period (475-221 BC). Through military campaigns and strategic alliances, Qin Shi Huang succeeded in unifying these states and declared himself the First Emperor of Qin in 221 BC. <br>
+           <span class="fw-bold">Centralization of Power:</span> <br>
+           
+           To consolidate his rule, Qin Shi Huang implemented several centralizing reforms. He standardized measurements, writing systems, and currency, making governance more efficient.
+           He established a centralized bureaucracy and implemented a system of strict laws and harsh punishments, which contributed to his authoritarian rule. <br>
+           <span class="fw-bold">Construction Projects:</span> <br>
+           
+           Qin Shi Huang is famous for numerous construction projects, including the construction of the Great Wall of China. Although the Great Wall existed in earlier forms, Qin Shi Huang's dynasty connected and extended the walls to protect against invasions from northern nomadic tribes.
+           He also initiated the construction of the Mausoleum of the First Qin Emperor, which included the famous Terracotta Army, a collection of life-sized terracotta soldiers and horses buried with him to protect him in the afterlife. <br>
+          <span class="fw-bold"> Standardization of Writing:</span> <br>
+           
+           One of Qin Shi Huang's most enduring legacies is the standardization of the Chinese writing system. He ordered the creation of a single, unified script based on the script used in the state of Qin. This helped promote communication and administrative efficiency. <br>
+           <span class="fw-bold">End of His Reign:</span> <br>
+           
+           Qin Shi Huang's rule was marked by authoritarianism and the suppression of intellectual dissent. He ordered the burning of many books and the execution of scholars who criticized his regime.
+           His obsession with seeking immortality led to the search for the elixir of life, which is believed to have contributed to his early death in 210 BC.
+           <span class="fw-bold">Legacy:</span> <br>
+           
+           Despite the controversies and harsh aspects of his rule, Qin Shi Huang's unification of China laid the foundation for future Chinese dynasties. His dynasty, the Qin Dynasty, lasted for a relatively short time but left a lasting impact on the political, cultural, and administrative landscape of China.
+           He is remembered as the first emperor to rule over a unified China and is often referred to as the "First Emperor of Qin." His impact on Chinese history is so profound that the country is named after his dynasty, "China."
+           Qin Shi Huang's reign marked a pivotal moment in Chinese history, and his contributions and actions continue to be studied and remembered to this day.
+           &#9827;
+           
+           </p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-dismiss="modal">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ====== modal box End===== -->
+
+ <!-- ======modal box start===== -->
+ <div class="modal fade modal-lg" data-bs-backdrop="static" id="azadi-tower">
+  <div class="modal-dialog  modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+          <img
+            src="../IMAGES/logo-.png"
+            width="70px"
+            height="60px"
+            alt="logo"
+            id="logo-img"
+          />
+          <span class="text-dark">Historical</span>
+          <span class="fw-bold text-primary">Monuments</span></a
+        >
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body ms-2">
+       <h1>The Azadi Tower</h1>
+       <p>The Azadi Tower, also known as the "Freedom Tower," is a famous landmark located in Tehran, Iran. It has a significant history and cultural importance in the country. Here is a brief overview of its history: <br>
+
+        <span class="fw-bold">Construction:</span> The construction of the Azadi Tower began in 1966 under the rule of Mohammad Reza Shah Pahlavi, the last Shah of Iran. The tower was built to commemorate the 2,500th anniversary of the Persian Empire, which took place in 1971. The tower was designed by architect Hossein Amanat. <br>
+        
+       <span class="fw-bold"> Symbolism:</span> The Azadi Tower is not only an architectural marvel but also carries significant symbolism. Its name, "Azadi," means "freedom" in Persian, and the tower was intended to symbolize the country's long history of struggle for independence and freedom. <br>
+        
+       <span class="fw-bold"> Architecture:</span> The tower's design is a fusion of both modern and traditional Iranian architecture. It stands at a height of approximately 50 meters (164 feet) and features a distinctive, soaring marble arch with intricate geometric patterns and Persian calligraphy. <br>
+        
+        <span class="fw-bold">Historical Events:</span> The Azadi Tower has witnessed several significant events in Iran's history. It was a focal point for celebrations during the 2,500th anniversary of the Persian Empire and was also used as a gathering place during important political rallies. <br>
+        
+        <span class="fw-bold">Post-Revolution:</span> After the Iranian Revolution of 1979, which led to the overthrow of the monarchy and the establishment of the Islamic Republic of Iran, the tower's symbolism evolved. While it still represents freedom and independence, its meaning has been interpreted in the context of the new government. <br>
+        
+        <span class="fw-bold">Cultural Significance:</span> Today, the Azadi Tower remains an important cultural and architectural symbol in Tehran. It is open to the public, and visitors can go inside the tower to learn more about its history and enjoy panoramic views of the city from its upper levels.
+        
+        In summary, the Azadi Tower in Iran is a prominent landmark with a history dating back to the 1960s. It was constructed to commemorate the Persian Empire's 2,500th anniversary and symbolizes freedom and independence in Iranian culture. Over the years, it has witnessed significant historical events and continues to be a symbol of national pride. &#9827;</p>  
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-dismiss="modal">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ====== modal box End===== -->
+
+
+<section id="travel-options" class="container mt-5">
+ <h2 class="text-center mb-5">Getting There</h2>
+ <div class="row">
+     <div class="col-lg-4 col-md-4 col-sm-12">
+      <div class=" card border rounded p-3" id="s-card">
+         <h5 class="fw-bold  f-details">By Bus <i class="fa fa-bus"></i> / Flight&nbsp; <i class="fa fa-plane"></i></h5>
+         <h6>The Taj Mahal India.</h6>
+         <p>"Embark on a timeless journey to behold the majestic beauty of the Taj Mahal's grandeur."</p>
+         <a href="#" class="btn btn-primary" data-bs-target="#towards-taj" data-bs-toggle="modal">Bus / Flight Details</a>
+         </div>
+     </div>
+
+     <div class="col-lg-4 col-md-4 col-sm-12">
+      <div class=" card border rounded p-3" id="s-card">
+         <h5 class="fw-bold  f-details">By Bus <i class="fa fa-bus"></i> / Flight&nbsp; <i class="fa fa-plane"></i></h5>
+         <h6>Qin Shi Huang Tomb China.</h6>
+         <p>"Explore the mysteries of Qin Shi Huang Tomb, an ancient marvel hidden beneath China's soil."</p>
+         <a href="#" class="btn btn-primary" data-bs-target="#towards-Qin" data-bs-toggle="modal">Bus / Flight Details</a>
+         </div>
+     </div>
+
+     <div class="col-lg-4 col-md-4 col-sm-12">
+      <div class=" card border rounded p-3" id="s-card">
+         <h5 class="fw-bold  f-details">By Bus <i class="fa fa-bus"></i> / Flight&nbsp; <i class="fa fa-plane"></i></h5>
+         <h6>The Azadi Tower Iran.</h6>
+         <p>"Embrace history and freedom's symbol: The Azadi Tower, a majestic Iranian landmark, awaits your visit."</p>
+         <a href="#" class="btn btn-primary" data-bs-target="#towards-azadi" data-bs-toggle="modal">Bus / Flight Details</a>
+         </div>
+     </div>
+
+ </div>
+</section>
+ <!-- =====Advertise section End ======--->
+
+  <!-- ======modal box start===== -->
+  <div class="modal fade modal-lg" data-bs-backdrop="static" id="towards-taj">
+   <div class="modal-dialog  modal-dialog-scrollable">
+     <div class="modal-content">
+       <div class="modal-header">
+         <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+           <img
+             src="../IMAGES/logo-.png"
+             width="70px"
+             height="60px"
+             alt="logo"
+             id="logo-img"
+           />
+           <span class="text-dark">Historical</span>
+           <span class="fw-bold text-primary">Monuments</span></a
+         >
+         <button class="btn-close" data-bs-dismiss="modal"></button>
+       </div>
+       <div class="modal-body ms-2">
+        <h3 class="fw-bold">The Taj Mahal India</h3>
+        <p>
+         Here are travel details for visiting the Taj Mahal by bus and by flight:
+
+         <h5 class="fw-bold">Traveling to the Taj Mahal by Bus: <i class="fa fa-bus"></i></h5>
+
+     <h6 class="fw-bold">From Delhi:</h6>
+   - You can take a bus from Delhi to Agra, which is the city where the Taj Mahal is located.
+   - There are several options for buses, including government-operated and private buses.
+   - The journey by bus from Delhi to Agra takes approximately 3 to 4 hours, depending on traffic conditions.
+   - Buses are a cost-effective way to travel, and they offer comfortable seating options.
+
+    <h6 class="fw-bold"> From Jaipur:</h6>
+   - If you're coming from Jaipur, you can also find bus services to Agra.
+   - The distance between Jaipur and Agra is around 240 kilometers, and the bus journey can take around 5 to 6 hours.
+
+    <h6 class="fw-bold"> Local Transport in Agra:</h6>
+   - Once you reach Agra, you can hire a local taxi, auto-rickshaw, or cycle-rickshaw to reach the Taj Mahal.
+   - The Taj Mahal is located in the heart of Agra and is easily accessible from various parts of the city.
+<br><br>
+     <h5 class="fw-bold">Traveling to the Taj Mahal by Flight: <i class="fa fa-plane"></i> </h5>
+
+    <h6 class="fw-bold">Nearest Airport:</h6>
+   - The nearest airport to the Taj Mahal is the **Agra Airport (AGR)**, which is also known as the **Kheria Airport**.
+   - Agra Airport is well-connected to major cities in India, including Delhi, Mumbai, and Jaipur.
+   - You can book a domestic flight to Agra from any of these cities.
+
+    <h6 class="fw-bold">From Delhi:</h6>
+   - If you're coming from Delhi, you can take a domestic flight to Agra, which is the fastest way to reach the city.
+   - The flight from Delhi to Agra takes approximately 1 to 1.5 hours.
+
+    <h6 class="fw-bold">From Mumbai:</h6>
+   - If you're coming from Mumbai, you can also find domestic flights to Agra, typically with a stopover in Delhi or another major city.
+   - The total travel time from Mumbai to Agra by flight can vary based on layovers but generally takes around 4 to 5 hours.
+
+   <h6 class="fw-bold"> Transportation from Agra Airport:</h6>
+   - From Agra Airport, you can hire a taxi or use ride-sharing services to reach the Taj Mahal, which is just a short drive away.
+   - The airport is approximately 13 kilometers (8 miles) from the Taj Mahal.
+<h6 class="fw-bold">Note:</h6>
+Please note that flight schedules and bus services may vary, so it's advisable to check with airlines and bus operators for the most up-to-date information and book your tickets in advance, especially during peak tourist seasons. Enjoy your visit to the Taj Mahal!
+        </p>  
+       </div>
+       <div class="modal-footer">
+         <button class="btn btn-primary" data-bs-dismiss="modal">
+           Cancel
+         </button>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- ====== modal box End===== -->
+ 
+  <!-- ======modal box start===== -->
+  <div class="modal fade modal-lg" data-bs-backdrop="static" id="towards-Qin">
+   <div class="modal-dialog  modal-dialog-scrollable">
+     <div class="modal-content">
+       <div class="modal-header">
+         <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+           <img
+             src="../IMAGES/logo-.png"
+             width="70px"
+             height="60px"
+             alt="logo"
+             id="logo-img"
+           />
+           <span class="text-dark">Historical</span>
+           <span class="fw-bold text-primary">Monuments</span></a
+         >
+         <button class="btn-close" data-bs-dismiss="modal"></button>
+       </div>
+       <div class="modal-body ms-2">
+        <h3 class="fw-bold">Qin Shi Huang Tomb China</h3>
+        <p>
+         Here are travel details for visiting the Qin Shi Huang Tomb China by bus and by flight:
+
+         <h5 class="fw-bold">Traveling to the Qin Shi Huang Tomb China by Bus: <i class="fa fa-bus"></i></h5>
+
+     <h6 class="fw-bold">From Xi'an:</h6>
+      You can take a bus from Xi'an, the nearest major city to the Terracotta Army site
+
+    <h6 class="fw-bold">Distance:</h6>
+ The Terracotta Army is located about 40 kilometers (25 miles) east of Xi'an.
+
+    <h6 class="fw-bold"> Bus Options:</h6>
+    There are regular tourist buses that operate between Xi'an and the Terracotta Army site
+
+    <h6 class="fw-bold">  Travel Time:</h6>
+    The bus journey takes approximately 1 to 1.5 hours, depending on traffic conditions.
+<br><br>
+     <h5 class="fw-bold">Traveling to Qin Shi Huang Tomb China by Flight: <i class="fa fa-plane"></i> </h5>
+
+    <h6 class="fw-bold"> Nearest Airport:</h6>
+    Xi'an Xianyang International Airport (XIY) is the nearest airport
+
+    <h6 class="fw-bold">Domestic Flights:</h6>
+     You can book a domestic flight to Xi'an from major cities in China, such as Beijing, Shanghai, and Guangzhou
+
+    <h6 class="fw-bold">International Flights:</h6>
+     If you're traveling from outside China, you can take an international flight to Xi'an via connecting airports like Beijing Capital International Airport (PEK) or Shanghai Pudong International Airport (PVG).
+
+   <h6 class="fw-bold"> Airport to Site:</h6>
+    From Xi'an, you can hire a taxi or take a local bus to reach the Terracotta Army site, which is a short drive from the airport.
+<h6 class="fw-bold">Note:</h6>
+Please note that the Terracotta Army is a popular tourist attraction, so it's advisable to check for the latest transportation options, schedules, and ticket information when planning your visit. Enjoy exploring this incredible historical site
+        </p>  
+       </div>
+       <div class="modal-footer">
+         <button class="btn btn-primary" data-bs-dismiss="modal">
+           Cancel
+         </button>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- ====== modal box End===== -->
+  <!-- ======modal box start===== -->
+  <div class="modal fade modal-lg" data-bs-backdrop="static" id="towards-azadi">
+   <div class="modal-dialog  modal-dialog-scrollable">
+     <div class="modal-content">
+       <div class="modal-header">
+         <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+           <img
+             src="../IMAGES/logo-.png"
+             width="70px"
+             height="60px"
+             alt="logo"
+             id="logo-img"
+           />
+           <span class="text-dark">Historical</span>
+           <span class="fw-bold text-primary">Monuments</span></a
+         >
+         <button class="btn-close" data-bs-dismiss="modal"></button>
+       </div>
+       <div class="modal-body ms-2">
+        <h3 class="fw-bold">The Azadi Tower Iran</h3>
+        <p>
+         Here are travel details for visiting The Azadi Tower Iran by bus and by flight:
+
+         <h5 class="fw-bold">Traveling to the Azadi Tower Iran by Bus: <i class="fa fa-bus"></i></h5>
+
+     <h6 class="fw-bold">Distance:</h6>
+      Azadi Tower is located in Tehran, making it accessible from various parts of the city.
+
+    <h6 class="fw-bold">Bus Options:</h6>
+     Tehran has an extensive public bus network, and you can use local buses to reach Azadi Tower
+
+    <h6 class="fw-bold"> Travel Time:</h6>
+     The travel time by bus will depend on your starting point in Tehran but is typically within 30 minutes to an hour.
+<br><br>
+     <h5 class="fw-bold">Traveling to The Azadi Tower in Iran by Flight: <i class="fa fa-plane"></i> </h5>
+
+    <h6 class="fw-bold"> Nearest Airport:</h6>
+    The closest major airport to Azadi Tower is Tehran Imam Khomeini International Airport (IKA).
+
+    <h6 class="fw-bold">Domestic Flights:</h6>
+    Domestic Flights: If you are traveling from within Iran, you can book a domestic flight to Tehran Imam Khomeini International Airport from other major cities like Isfahan, Shiraz, or Mashhad.
+
+    <h6 class="fw-bold">International Flights:</h6>
+    International Flights: For international travelers, Tehran Imam Khomeini International Airport (IKA) serves as the primary international gateway to Tehran, with flights from various countries.
+
+   <h6 class="fw-bold"> Airport to Azadi Tower:</h6>
+    From the airport, you can hire a taxi or use ride-sharing services to reach Azadi Tower, which is approximately 45 kilometers (28 miles) from the airport
+
+<h6 class="fw-bold">Note:</h6>
+Please keep in mind that Tehran is a bustling city with various transportation options, including the Tehran Metro and taxis, to help you reach Azadi Tower conveniently. Make sure to check the latest flight schedules and transportation options to plan your visit effectively. Enjoy exploring Azadi Tower and its historical significance!
+        </p>  
+       </div>
+       <div class="modal-footer">
+         <button class="btn btn-primary" data-bs-dismiss="modal">
+           Cancel
+         </button>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- ====== modal box End===== -->
+ 
+
+
+   <!-- =====Footer section Start ======--->
+   <footer class="footer mt-3">
+    <div class="container-fluid bg-dark p-0">
+      <div class="container bg-dark">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="../IMAGES/logo-.png" alt="logo" id="footer-logo" />
+            <br />
+            <span class="text-white fs-3">Historical</span>
+            <span class="fw-bold text-primary fs-3">Monuments</span>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="contact p-0">
+              <h1 class="text-white fs-5 mb-4" id="footer-head">
+                Contact Us
+              </h1>
+              <a href="#" id="footer-links"
+                ><li class="text-white list-unstyled" id="contact-links">
+                  <i class="fa fa-location-arrow"></i>&emsp;Apwa Complex
+                  Garden East Karachi
+                </li></a
+              >
+              <a href="mailto:Historicalmonuments.com" id="footer-links"
+                ><li class="text-white list-unstyled" id="contact-links">
+                  <i class="fa fa-envelope"></i>&emsp;Historicalmonuments.com
+                </li></a
+              >
+              <li class="text-white list-unstyled" id="contact-links">
+                <i class="fa fa-phone"></i>&emsp;031182888888
+              </li>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="subscribe">
+              <a href="../History in PDF/Site map.docx" class="text-white" id="site-map">Site-map</a> <br><br>
+              <h1 class="text-white fs-5" id="footer-head">Subscribe</h1>
+              <input
+                type="email"
+                name=""
+                id="sub_email"
+                class="form-control mt-1"
+                placeholder="Email"
+              required=""/>
+              <button class="btn btn-primary mt-4" onclick="subscribe()">Subscribe</button>
+           
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a href="https://web.facebook.com/" target="_blank"
+            ><img
+              src="../IMAGES/facebook-icon.png"
+              width="60px"
+              height=""
+              alt=""
+              id="icon"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img
+              src="../IMAGES/instagram-icon.png"
+              width="60px"
+              height=""
+              alt=""
+              id="icon"
+          /></a>
+          <a href="https://twitter.com/" target="_blank"
+            ><img
+              src="../IMAGES/twitter-icon.png"
+              width="60px"
+              height=""
+              alt=""
+              id="icon"
+          /></a>
+        </div>
+        <hr class="text-white" />
+        <div class="text-center">
+          <span class="text-white" id="copy-all"
+            >&copy;All Right Reserved</span
+          >
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====Footer section End ======--->
+
+ 
+
+       <!-- jquery cdn start -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+      <!-- jquery cdn end -->
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+</body>
+</html>

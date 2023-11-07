@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>North Zone</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-----------External CSS----------- -->
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="icon" href="../IMAGES/logo-.png">
+
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      
+      <!------- AOS cdn -------->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+ <!----=======  Navbar Start =======------->
+ <nav class="navbar navbar-expand-lg p-0 fixed-top">
+  <div class="container-fluid py-1 bg-dark">
+    <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+     <img src="../IMAGES/logo-.png" width="70px" height="60px" alt="logo" id="logo-img">
+    <span class="text-white ">Historical</span> <span class="fw-bold text-primary">Monuments</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse me-5 "  id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link text-white hover-underline-animation" aria-current="page" href="../index.html">HOME</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="btn dropdown-toggle text-white  border-0 pt-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            ZONE
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="../Website links/East Zone.html">EAST ZONE</a></li>
+            <li><a class="dropdown-item" href="../Website links/West Zone.html">WEST ZONE</a></li>
+           
+            <li><a class="dropdown-item" href="../Website links/North Zone.html">NORTH ZONE</a></li>
+            <li><a class="dropdown-item" href="../Website links/South Zone.html">SOUTH ZONE</a></li>
+            <li><a class="dropdown-item" href="../Website links/World wonder.html">WORLD WONDER</a></li>
+          </ul>
+        </li> 
+        <li class="nav-item">
+          <a
+            class="nav-link text-white hover-underline-animation"
+            href="././Services.html"
+            tabindex="-1"
+            aria-disabled="true"
+            >SERVICES</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white hover-underline-animation" href="../Website links/About Us.html" tabindex="-1" aria-disabled="true" >ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white hover-underline-animation" href="../Website links/Contact us.html" tabindex="-1" aria-disabled="true" >CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white hover-underline-animation" href="#" tabindex="-1" aria-disabled="true" data-bs-target="#feedback" data-bs-toggle="modal">FEEDBACK</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ <!---===== Navbar End ======---->
+ <br><br><br><br><br>
+
+ <!-- ======Feedback modal box start===== -->
+ <form action="" onsubmit="submitted()">
+ <div class="modal fade modal-lg" data-bs-backdrop="static" id="feedback">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+          <img src="../IMAGES/logo-.png" width="70px" height="60px" alt="logo" id="logo-img">
+         <span class="text-dark ">Historical</span> <span class="fw-bold text-primary">Monuments</span></a> 
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h4 class="text-center  fw-bold">We'd love to hear your <span class="text-primary">Feedback</span>!</h4>    
+        <label for="" class="form-label  " id="feed-label">Name</label> 
+        <input type="text" name="" id="_name" class="form-control feed-control" placeholder="Name"> 
+
+        <label for="" class="form-label  mt-2" id="feed-label">Email</label> 
+        <input type="email" name="" id="_email" class="form-control feed-control" placeholder="Email address">
+
+        <label for="" class="form-label mt-2" id="feed-label">Feedback</label> 
+        <textarea name="feeback" id="_textarea" cols="30" rows="5" class="form-control feed-control" placeholder="Feedback"></textarea>
+        <span id="err"></span>
+      </div>
+      <div class="modal-footer">
+      <button class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
+      <button type="submit" class="btn btn-primary me-5">Submit</button>
+      </div>
+    </div>
+  </div>
+ </div> 
+ </form>
+ <!-- ======Feedback modal box End===== -->
+
+ 
+<!-- North section start -->
+<div class="container">
+  <h1 class="fs-1 fw-bold">Top Historical Monuments in <span class="text-primary"> China</span></h1>
+
+  <div class="row mt-5 mb-3">
+    <div class="col-lg-6 col-md-12 col-sm-12">
+      <img
+      src="../IMAGES/temple-of-heaven-2.jpg"
+      width="100%"
+      height="400px" id="temple"
+      alt="" title="The Temple of Heaven"
+      data-aos="fade-right" data-aos-duration="1200" />
+    <br />
+    <span class="fst-italic text">The Temple of Heaven</span>
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12">
+      <p><span class="fw-bold">The Temple of Heaven</span>, known as "Tiantan" in Chinese, is a historical and architectural masterpiece located in Beijing, China. It has a rich history dating back to the Ming Dynasty (1368-1644) and is a UNESCO World Heritage Site. Here is an overview of its history: <br>
+
+        <span class="fw-bold">Construction and Purpose:</span><br>
+        
+        Ming Dynasty (15th Century): The construction of the Temple of Heaven began in 1406 during the reign of Emperor Yongle, the third emperor of the Ming Dynasty. The temple complex was built as part of a larger architectural ensemble that included the Forbidden City, which served as the imperial palace, and the Temple of Earth and the Temple of the Sun. <br>
+        
+        <span class="fw-bold">Imperial Rituals:</span>
+         The primary purpose of the Temple of Heaven was to serve as a sacred site where the Emperor, who was considered the "Son of Heaven" in Chinese cosmology, would perform elaborate rituals to communicate with the heavens.  <br>
+       <button class="btn btn-primary" data-bs-target="#temple" data-bs-toggle="modal">Learn more</button>
+
+           <!-- ====== modal box Start===== -->
+           <div class="modal fade modal-lg" data-bs-backdrop="static" id="temple">
+            <div class="modal-dialog  modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+                    <img
+                      src="../IMAGES/logo-.png"
+                      width="70px"
+                      height="60px"
+                      alt="logo"
+                      id="logo-img"
+                    />
+                    <span class="text-dark">Historical</span>
+                    <span class="fw-bold text-primary">Monuments</span></a
+                  >
+                  <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                 <p> These rituals were essential for ensuring good harvests and the well-being of the empire. The temple was a place for annual ceremonies, such as the Winter Solstice Festival. <br>
+        
+                  <span class="fw-bold">Architectural Significance:</span><br>
+                   The architecture of the Temple of Heaven is a remarkable example of ancient Chinese architectural design and principles. The complex includes several key structures:
+                   
+                   The Hall of Prayer for Good Harvests (Qiniandian): This triple-tiered wooden structure is one of the most iconic buildings in the complex. It features a distinctive blue-tiled roof and is where the most important rituals took place. 
+                   The Circular Mound Altar (Yuanqiu Tan): This is an open-air platform consisting of three tiers of marble stones, symbolizing the heavens, where the Emperor would make offerings to the gods. <br>
+                   
+                   <span class="fw-bold">Historical Significance:</span> <br>
+                   The Temple of Heaven played a crucial role in the religious and political life of ancient China. The ceremonies held here were seen as a way for the Emperor to maintain harmony between heaven and earth, and by extension, to legitimize his rule as the "Son of Heaven." The temple complex symbolizes the deep connection between Chinese emperors, their mandate to rule, and their role as intermediaries between heaven and earth.
+                   
+                   Today, the Temple of Heaven stands as a testament to Chinese architectural and cultural heritage and is a popular tourist attraction, visited by people from around the world who come to admire its beauty and historical significance.&#9827;
+                   
+                   </p> &#9827;</p>     
+                 
+
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ====== modal box End===== -->
+    </div>
+  </div>
+
+  <div class="row mt-5 mb-3">
+    <div class="col-lg-6 col-md-12 col-sm-12">
+      <p><span class="fw-bold">The Potala Palace</span>, located in Lhasa, Tibet Autonomous Region, China, is one of the most iconic and historically significant landmarks in the world. It has a rich history that is deeply intertwined with Tibetan Buddhism and Tibetan culture. Here is an overview of the history of the Potala Palace: <br>
+
+        <span class="fw-bold">Construction and Purpose:</span><br>
+        
+        <span class="fw-bold"> 7th Century:</span>
+        The Potala Palace's history can be traced back to the 7th century when it was built by Tibetan King Songtsen Gampo. The original structure, known as the "Red Palace," was constructed for religious purposes and served as a meditation retreat for the king. <br>
+        
+       <span class="fw-bold">17th Century:</span><br>
+        The current structure, which is a massive and imposing complex, was built during the 17th century by the fifth Dalai Lama, Lobsang Gyatso. The construction of the palace was initiated in 1645 and took approximately three years to complete. <br>
+  
+       <button class="btn btn-primary" data-bs-target="#potala" data-bs-toggle="modal">Learn more</button>
+
+           <!-- ====== modal box Start===== -->
+           <div class="modal fade modal-lg" data-bs-backdrop="static" id="potala">
+            <div class="modal-dialog  modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+                    <img
+                      src="../IMAGES/logo-.png"
+                      width="70px"
+                      height="60px"
+                      alt="logo"
+                      id="logo-img"
+                    />
+                    <span class="text-dark">Historical</span>
+                    <span class="fw-bold text-primary">Monuments</span></a
+                  >
+                  <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                 <p> 
+        
+                  <span class="fw-bold">Religious Significance:</span> <br>
+                  
+                  The Potala Palace holds immense religious significance in Tibetan Buddhism: <br>
+                  <span class="fw-bold">Residence of Dalai Lamas:</span> The palace served as the winter residence of the Dalai Lamas, who are the spiritual leaders of Tibetan Buddhism, from the 17th century until the 14th Dalai Lama fled to India during the 1959 Tibetan uprising.
+            
+                 <span class="fw-bold">Spiritual Retreat:</span> In addition to its role as a residence, the palace complex contains numerous chapels,      prayer halls, and sacred relics, making it a center for Tibetan Buddhist religious activities, rituals,      and ceremonies. <br>
+                 <span class="fw-bold">Architecture and Design:</span> <br>
+            The Potala Palace is renowned for its unique architectural style and design: <br>
+            
+            <span class="fw-bold">Impressive Structure:</span> <br> The palace is built on Marpo Ri (Red Hill) and is known for its grandeur, towering above the city of Lhasa. It consists of two main parts: the White Palace and the Red Palace.
+            
+            <span class="fw-bold">White Palace:</span> The White Palace is the administrative and secular part of the complex and is home to the living quarters, offices, and other non-religious functions of the Dalai Lama. <br>
+            
+            <span class="fw-bold">Red Palace:</span> The Red Palace is the religious part of the palace and houses numerous chapels, stupas, and sacred relics, including the tombs of several Dalai Lamas. <br> <br>
+            
+            <span class="fw-bold">UNESCO World Heritage Site:</span> <br>
+            In 1994, the Potala Palace was designated as a UNESCO World Heritage Site in recognition of its cultural and historical significance. It is also considered a symbol of Tibetan identity and resilience.
+            
+            <span class="fw-bold">Tourist Attraction:</span>
+            Today, the Potala Palace is a major tourist attraction and pilgrimage site, drawing visitors from all over the world. It stands as a testament to Tibetan culture, spirituality, and the enduring legacy of Tibetan Buddhism. Despite political changes and challenges in Tibet, the Potala Palace remains a symbol of Tibetan heritage and continues to captivate people with its beauty and history.
+                  &#9827;</p>
+                 </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ====== modal box End===== -->
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12">
+      <img
+      src="../IMAGES/Potala-Palace-China-.jpg"
+      width="100%"
+      height="400px" class="rounded"
+      alt="" title="The Potala Palace"
+      data-aos="fade-up" data-aos-duration="1200" />
+    <br />
+    <span class="fst-italic text">The Potala Palace</span>
+    </div>
+  </div>
+
+  <div class="row mt-5 mb-3">
+    <div class="col-lg-6 col-md-12 col-sm-12">
+      <img
+      src="../IMAGES/lama-temple3.jpeg"
+      width="100%"
+      height="400px" class="rounded"
+      alt="" title="The Lama Temple"
+      data-aos="fade-up" data-aos-duration="1200" />
+    <br />
+    <span class="fst-italic text">The Lama Temple</span>
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12">
+      <p><span class="fw-bold">The Lama Temple</span>, also known as the Yonghe Temple, is a prominent Tibetan Buddhist temple located in Beijing, China. It is one
+        of the most significant and well-preserved lamaseries outside of Tibet. The temple complex has a rich history that reflects the
+        cultural and religious connections between Tibet and China. Here's an overview of the Lama Temple's history: <br>
+        <span class="fw-bold">Foundation and Origin:</span> <br> The Lama Temple was originally constructed in 1694 during the Qing Dynasty (1644–1912). It was
+        initially built as a residence for Prince Yong, who later became Emperor Yongzheng. After Yongzheng's death, the complex was
+        converted into a lamasery, a place of residence and study for Tibetan Buddhist monks. <br>
+        <span class="fw-bold">Tibetan Buddhism in China:</span> <br>The Qing Dynasty had a complex relationship with Tibetan Buddhism. The Qing emperors sought
+        to maintain control over Tibet and strengthen their influence over the region. 
+        </p>
+       <button class="btn btn-primary" data-bs-target="#lama-temple" data-bs-toggle="modal">Learn more</button>
+
+           <!-- ====== modal box Start===== -->
+           <div class="modal fade modal-lg" data-bs-backdrop="static" id="lama-temple">
+            <div class="modal-dialog  modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+                    <img
+                      src="../IMAGES/logo-.png"
+                      width="70px"
+                      height="60px"
+                      alt="logo"
+                      id="logo-img"
+                    />
+                    <span class="text-dark">Historical</span>
+                    <span class="fw-bold text-primary">Monuments</span></a
+                  >
+                  <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                 <p> As a result, they supported Tibetan Buddhism
+                  and established lamaseries like the Lama Temple in Beijing.The Lama Temple served as a center for Tibetan Buddhist practices,
+                  teachings, and rituals. It became a hub for both Tibetan monks and Han Chinese followers interested in Tibetan Buddhism. <br>
+                  <span class="fw-bold">Architecture and Cultural Influence:</span> <br> The architecture of the Lama Temple is a blend of Tibetan and Chinese styles, reflecting
+                  the synthesis of these two cultures. The temple complex consists of several halls, courtyards, and pavilions, each with its own
+                  significance and purpose. The most notable feature is the giant statue of Maitreya Buddha, which stands at an impressive
+                  height of 18 meters (59 feet) and is carved from a single piece of white sandalwood.The complex is adorned with intricate
+                  wood carvings, colorful murals, and various Tibetan Buddhist symbols. Visitors can observe the distinctive Tibetan-style prayer
+                  wheels, decorative Tibetan script, and other elements that evoke the spiritual essence of Tibetan Buddhism. <br>
+                  <span class="fw-bold">Modern Era:</span> <br> Today, the Lama Temple remains an active place of worship and religious practice. It is also a popular tourist
+                  destination, attracting visitors who are interested in exploring its history, architecture, and spiritual significance. The temple's
+                  peaceful atmosphere and cultural richness continue to make it a place of reverence and admiration.
+                  
+                  &#9827;</p>
+
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ====== modal box End===== -->
+    </div>
+  </div>
+
+
+  <div class="row mt-5 mb-3">
+    <div class="col-lg-6 col-md-12 col-sm-12">
+      <p><span class="fw-bold">Qin Shi Huang</span>, often simply referred to as Qin Shi Huangdi, was a significant figure in Chinese history and the first emperor of the Qin Dynasty. His reign and contributions to China had a profound and lasting impact on the country's history. Here is an overview of Qin Shi Huang and his historical significance: <br>
+
+        <span class="fw-bold">   Early Life:</span> <br>
+           
+           Qin Shi Huang was born in 259 BC as Ying Zheng. He became the King of Qin at the age of 13 after the death of his father, King Zhuangxiang of Qin.
+           Unification of China:
+           
+           One of the most significant achievements of Qin Shi Huang was the unification of China. Prior to his rule, China was divided into several warring states during a period known as the Warring States Period (475-221 BC). Through military campaigns and strategic alliances, Qin Shi Huang succeeded in unifying these states and declared himself the First Emperor of Qin in 221 BC. <br>
+           
+           </p>
+       <button class="btn btn-primary" data-bs-target="#Qin-Shi" data-bs-toggle="modal">Learn more</button>
+
+           <!-- ====== modal box Start===== -->
+           <div class="modal fade modal-lg" data-bs-backdrop="static" id="Qin-Shi">
+            <div class="modal-dialog  modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+                    <img
+                      src="../IMAGES/logo-.png"
+                      width="70px"
+                      height="60px"
+                      alt="logo"
+                      id="logo-img"
+                    />
+                    <span class="text-dark">Historical</span>
+                    <span class="fw-bold text-primary">Monuments</span></a
+                  >
+                  <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <span class="fw-bold">Centralization of Power:</span> <br>
+           <p>
+                  To consolidate his rule, Qin Shi Huang implemented several centralizing reforms. He standardized measurements, writing systems, and currency, making governance more efficient.
+                  He established a centralized bureaucracy and implemented a system of strict laws and harsh punishments, which contributed to his authoritarian rule. <br>
+                  <span class="fw-bold">Construction Projects:</span> <br>
+                  
+                  Qin Shi Huang is famous for numerous construction projects, including the construction of the Great Wall of China. Although the Great Wall existed in earlier forms, Qin Shi Huang's dynasty connected and extended the walls to protect against invasions from northern nomadic tribes.
+                  He also initiated the construction of the Mausoleum of the First Qin Emperor, which included the famous Terracotta Army, a collection of life-sized terracotta soldiers and horses buried with him to protect him in the afterlife. <br>
+                 <span class="fw-bold"> Standardization of Writing:</span> <br>
+                  
+                  One of Qin Shi Huang's most enduring legacies is the standardization of the Chinese writing system. He ordered the creation of a single, unified script based on the script used in the state of Qin. This helped promote communication and administrative efficiency. <br>
+                  <span class="fw-bold">End of His Reign:</span> <br>
+                  
+                  Qin Shi Huang's rule was marked by authoritarianism and the suppression of intellectual dissent. He ordered the burning of many books and the execution of scholars who criticized his regime.
+                  His obsession with seeking immortality led to the search for the elixir of life, which is believed to have contributed to his early death in 210 BC.
+                  <span class="fw-bold">Legacy:</span> <br>
+                  
+                  Despite the controversies and harsh aspects of his rule, Qin Shi Huang's unification of China laid the foundation for future Chinese dynasties. His dynasty, the Qin Dynasty, lasted for a relatively short time but left a lasting impact on the political, cultural, and administrative landscape of China.
+                  He is remembered as the first emperor to rule over a unified China and is often referred to as the "First Emperor of Qin." His impact on Chinese history is so profound that the country is named after his dynasty, "China."
+                  Qin Shi Huang's reign marked a pivotal moment in Chinese history, and his contributions and actions continue to be studied and remembered to this day.
+                  &#9827;</p>       
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ====== modal box End===== -->
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12">
+      <img
+      src="../IMAGES/qin-shi-huang-2.jpg"
+      width="100%"
+      height="400px" class="rounded"
+      alt="" title="Qin Shi Huang"
+      data-aos="fade-up" data-aos-duration="1200" />
+    <br />
+    <span class="fst-italic text"> Qin Shi Huang</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- North section End -->
+ 
+  <!-- =====Footer section Start ======--->
+  <footer class="footer">
+    <div class="container-fluid bg-dark p-0">
+      <div class="container bg-dark">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="../IMAGES/logo-.png" alt="logo" id="footer-logo" />
+            <br />
+            <span class="text-white fs-3">Historical</span>
+            <span class="fw-bold text-primary fs-3">Monuments</span>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="contact p-0">
+              <h1 class="text-white fs-5 mb-4" id="footer-head">
+                Contact Us
+              </h1>
+              <a href="#" id="footer-links"
+                ><li class="text-white list-unstyled" id="contact-links">
+                  <i class="fa fa-location-arrow"></i>&emsp;Apwa Complex
+                  Garden East Karachi
+                </li></a
+              >
+              <a href="mailto:Historicalmonuments.com" id="footer-links"
+                ><li class="text-white list-unstyled" id="contact-links">
+                  <i class="fa fa-envelope"></i>&emsp;Historicalmonuments.com
+                </li></a
+              >
+              <li class="text-white list-unstyled" id="contact-links">
+                <i class="fa fa-phone"></i>&emsp;031182888888
+              </li>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="subscribe">
+              <a href="../History in PDF/Site map.docx" class="text-white" id="site-map">Site-map</a> <br><br>
+              <h1 class="text-white fs-5" id="footer-head">Subscribe</h1>
+              <input
+                type="email"
+                name=""
+                id="sub_email"
+                class="form-control mt-1"
+                placeholder="Email"
+              required=""/>
+              <button class="btn btn-primary mt-4" onclick="subscribe()">Subscribe</button>
+           
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a href="https://web.facebook.com/" target="_blank"
+            ><img
+              src="../IMAGES/facebook-icon.png"
+              width="60px"
+              height=""
+              alt=""
+              id="icon"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img
+              src="../IMAGES/instagram-icon.png"
+              width="60px"
+              height=""
+              alt=""
+              id="icon"
+          /></a>
+          <a href="https://twitter.com/" target="_blank"
+            ><img
+              src="../IMAGES/twitter-icon.png"
+              width="60px"
+              height=""
+              alt=""
+              id="icon"
+          /></a>
+        </div>
+        <hr class="text-white" />
+        <div class="text-center">
+          <span class="text-white" id="copy-all"
+            >&copy;All Right Reserved</span
+          >
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====Footer section End ======--->
+
+
+       <!-- jquery cdn start -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+      <!-- jquery cdn end -->
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+ <!-- ======AOS  Animation on Scroll ======= -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+   AOS.init();
+ </script>
+ <!-- ======AOS Animation on Scroll ======= -->
+
+<script src="../JAVASCRIPT/script.js"></script>
+</body>
+</html>

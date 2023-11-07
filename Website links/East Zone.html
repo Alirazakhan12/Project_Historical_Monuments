@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>East Zone</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="icon" href="../IMAGES/logo-.png">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!------ font awesome cdn ----->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+      <!------- AOS cdn -------->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!----=======  Navbar Start =======------->
+    <nav class="navbar navbar-expand-lg p-0 fixed-top">
+      <div class="container-fluid py-1 bg-dark">
+        <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+          <img
+            src="../IMAGES/logo-.png"
+            width="70px"
+            height="60px"
+            alt="logo"
+            id="logo-img"
+          />
+          <span class="text-white">Historical</span>
+          <span class="fw-bold text-primary">Monuments</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white hover-underline-animation" aria-current="page" href="../index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="btn dropdown-toggle text-white border-0 pt-2"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ZONE
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../Website links/East Zone.html">EAST ZONE</a></li>
+                <li><a class="dropdown-item" href="../Website links/West Zone.html">WEST ZONE</a></li>
+
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../Website links/North Zone.html"
+                    target="_blank"
+                    >NORTH ZONE</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="../Website links/South Zone.html">SOUTH ZONE</a></li>
+                <li><a class="dropdown-item" href="../Website links/World wonder.html">WORLD WONDER</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white hover-underline-animation"
+                href="../Website links/Services.html"
+                tabindex="-1"
+                aria-disabled="true"
+                >SERVICES</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white hover-underline-animation"
+                href="../Website links/About Us.html"
+                tabindex="-1"
+                aria-disabled="true"
+                >ABOUT</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white hover-underline-animation"
+                href="../Website links/Contact us.html"
+                tabindex="-1"
+                aria-disabled="true"
+                >CONTACT</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white hover-underline-animation"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                data-bs-target="#feedback"
+                data-bs-toggle="modal"
+                >FEEDBACK</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!---===== Navbar End ======---->
+    <br /><br /><br /><br /><br />
+
+
+    <!-- ======Feedback modal box start===== -->
+    <form action="" onsubmit="submitted()">
+ <div class="modal fade modal-lg" data-bs-backdrop="static" id="feedback">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+          <img src="../IMAGES/logo-.png" width="70px" height="60px" alt="logo" id="logo-img">
+         <span class="text-dark ">Historical</span> <span class="fw-bold text-primary">Monuments</span></a> 
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h4 class="text-center  fw-bold">We'd love to hear your <span class="text-primary">Feedback</span>!</h4>    
+        <label for="" class="form-label " id="feed-label">Name</label> 
+        <input type="text" name="" id="_name" class="form-control feed-control" placeholder="Name"> 
+
+        <label for="" class="form-label  mt-2" id="feed-label">Email</label> 
+        <input type="email" name="" id="_email" class="form-control feed-control" placeholder="Email address">
+
+        <label for="" class="form-label feed-label mt-2">Feedback</label> 
+        <textarea name="feeback" id="_textarea" cols="30" rows="5" class="form-control feed-control" placeholder="Feedback"></textarea>
+        <span id="err"></span>
+      </div>
+      <div class="modal-footer">
+      <button class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
+      <button type="submit" class="btn btn-primary me-5">Submit</button>
+      </div>
+    </div>
+  </div>
+ </div> 
+ </form>
+ <!-- ======Feedback modal box End===== -->
+
+    <!-- =====East section start===== -->
+    <div class="container">
+      <h1 class="fs-1 fw-bold">
+        Top Historical Monuments in <span class="text-primary"> India</span>
+      </h1>
+      <div class="row mt-4">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <img
+          src="../IMAGES/haw-mahal-4.jpg" 
+        width="100%"
+        height="430px" id="haawa"
+          alt=""  title="Hawa mahal"    
+          data-aos="fade-right" data-aos-duration="1200"/>
+        <span class="fst-italic text"> The Hawa Mahal</span>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+           <p>
+              <span class="fw-bold">The Hawa Mahal</span>, also known as the "Palace of the Winds," is a
+              famous architectural landmark located in Jaipur, the capital city
+              of the Indian state of Rajasthan. It is renowned for its unique
+              and distinctive honeycomb-like facade and rich historical
+              significance. Here is a brief history of the Hawa Mahal: <br />
+
+              <span class="fw-bold">Construction:</span> <br />
+
+              The Hawa Mahal was constructed in 1799 by Maharaja Sawai Pratap
+              Singh, who was a prominent ruler of the Kachwaha Rajput dynasty
+              that ruled Jaipur. The palace was designed by Lal Chand Ustad, an
+              architect in the royal court, and its construction was part of a
+              larger architectural project that included the construction of the
+              City Palace and other buildings in Jaipur. <br />
+              <span class="fw-bold">Architectural Features:</span> <br />
+
+              The most striking feature of the Hawa Mahal is its facade, which
+              consists of a five-story pink sandstone structure with 953 small
+              windows or "jharokhas" that are intricately designed.   <br>
+              <button class="btn btn-primary" data-bs-target="#hawa-mahal" data-bs-toggle="modal">Learn more</button>
+              
+      <!-- ======modal box start===== -->
+
+ <div class="modal fade modal-lg" data-bs-backdrop="static" id="hawa-mahal">
+  <div class="modal-dialog  modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+          <img
+            src="../IMAGES/logo-.png"
+            width="70px"
+            height="60px"
+            alt="logo"
+            id="logo-img"
+            />
+          <span class="text-dark">Historical</span>
+          <span class="fw-bold text-primary">Monuments</span></a
+        >
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+       <span class="fw-bold">Purpose:</span>
+       The windows
+       are built in a way that allows cool air to flow through the
+       palace, providing natural ventilation, which is particularly
+       important in Rajasthan's hot climate.
+       The primary purpose of the Hawa Mahal was to serve as a "veil" for
+       the royal women of the court. The palace's unique design allowed
+       the ladies of the royal household to observe the bustling street
+       life and festivals of Jaipur while remaining hidden from public
+       view. It provided a private and comfortable space for the women to
+       enjoy the outside world without compromising their modesty or
+       privacy. <br />
+       <span class="fw-bold">Historical Significance:</span> <br />
+
+       The Hawa Mahal is not just a masterpiece of Rajput architecture
+       but also symbolizes the rich cultural and architectural heritage
+       of Rajasthan. It is a popular tourist attraction and an important
+       part of Jaipur's historical and cultural landscape. Visitors are
+       drawn to its remarkable architecture and the opportunity to learn
+       about the royal history of Rajasthan. Today, the Hawa Mahal stands
+       as a testament to the architectural ingenuity of the past and
+       continues to captivate visitors from around the world with its
+       beauty and historical significance. It remains a cherished symbol
+       of Jaipur, the "Pink City," and Rajasthan's cultural heritage.
+       &#9827;
+     </p>
+
+     
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-dismiss="modal">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ====== modal box End===== -->
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <p>
+            <span class="fw-bold">The Humayun's Tomb</span> is a historic architectural marvel located in
+            Delhi, India. It is a UNESCO World Heritage Site and holds
+            significant historical and architectural importance. Here is a
+            brief history of Humayun's Tomb: <br />
+
+            <span class="fw-bold">Construction:</span> <br />
+
+            The construction of Humayun's Tomb began in 1565 and was completed
+            in 1572. It was commissioned by Empress Bega Begum, the first wife
+            of the Mughal Emperor Humayun, after his death. The tomb's design
+            is attributed to the Persian architect Mirak Mirza Ghiyas, who was
+            chosen by Empress Bega Begum. <br />
+            <span class="fw-bold">Architectural Style:</span> <br />
+
+            Humayun's Tomb is a fine example of Mughal architecture and is
+            often considered a precursor to the Taj Mahal. It showcases the
+            early use of the Persian-style charbagh (four-part) garden layout,
+            which became a hallmark of Mughal gardens. The tomb is built
+            primarily of red sandstone and white marble, making it an
+            exquisite blend of these two materials. The white marble is used
+            for intricate decorative elements. <br />
+            <span class="fw-bold">Significance:</span> <br />
+
+            
+            <button class="btn btn-primary" data-bs-target="#hamayon-tomb" data-bs-toggle="modal">Learn more</button>
+
+            <!-- ====== modal box Start===== -->
+            <div class="modal fade modal-lg" data-bs-backdrop="static" id="hamayon-tomb">
+              <div class="modal-dialog  modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+                      <img
+                        src="../IMAGES/logo-.png"
+                        width="70px"
+                        height="60px"
+                        alt="logo"
+                        id="logo-img"
+                      />
+                      <span class="text-dark">Historical</span>
+                      <span class="fw-bold text-primary">Monuments</span></a
+                    >
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>The tomb holds the remains of Emperor Humayun, making it the final
+                      resting place of the second Mughal emperor. It is considered a
+                      significant historical site and an important landmark in Delhi.
+                      The architectural style of Humayun's Tomb laid the foundation for subsequent Mughal architectural masterpieces, such as the Taj
+                      Mahal, showcasing the influence of Persian and Indian
+                      architectural traditions. <br />
+                      <span class="fw-bold">Charbagh Garden:</span>
+          
+                      The tomb is surrounded by a large charbagh, a formal garden
+                      divided into quadrants by water channels. The garden is
+                      meticulously designed and landscaped, with geometric patterns and
+                      lush greenery. <br />
+                      <span class="fw-bold">UNESCO World Heritage Site:</span>
+          
+                      In 1993, Humayun's Tomb was designated as a UNESCO World Heritage
+                      Site due to its architectural significance and its role in the
+                      development of Mughal garden design. &#9827;
+                    </p>
+            
+                 
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ====== modal box End===== -->
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <img
+          src="../IMAGES/hamayun tomb5.jpeg" 
+          width="100%"
+          height="460px" class="rounded"
+          alt="" title="The Humayun's Tomb"
+          data-aos="fade-up" data-aos-duration="1200"/>
+        <br />
+        <span class="fst-italic text"> The Humayun's Tomb</span>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <img
+          src="../IMAGES/taj mahal - 2.jpg" 
+          width="100%"
+          height="460px" class="rounded"
+          alt="" title="The Taj Mahal"
+          data-aos="fade-up" data-aos-duration="1200"/>
+        <br />
+        <span class="fst-italic text"> The Taj Mahal</span>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <p>
+            <span class="fw-bold">The Taj Mahal</span> is one of the most iconic and celebrated monuments
+            in the world, known for its exquisite beauty and historical
+            significance. It is located in Agra, India, and here is a brief
+            history of the Taj Mahal: <br />
+
+            <span class="fw-bold">Construction:</span> <br />
+
+            The Taj Mahal was built during the 17th century by the Mughal
+            Emperor Shah Jahan. Construction began in 1632 and was completed
+            in 1648, with additional work on the surrounding complex
+            continuing for several more years. The monument was commissioned
+            as a mausoleum to house the tomb of Shah Jahan's favorite wife,
+            Mumtaz Mahal, who had died during childbirth in 1631. The Taj
+            Mahal also contains the tomb of Shah Jahan himself, who was buried
+            there after his death in 1666. <br />
+            <span class="fw-bold">Architectural Style:</span> <br />
+
+            The Taj Mahal is a masterpiece of Mughal architecture, which is a
+            fusion of Persian, Islamic, and Indian architectural styles. It is
+            renowned for its perfect symmetry and graceful proportions. <br>
+            <button class="btn btn-primary" data-bs-target="#taj" data-bs-toggle="modal">Learn more</button>
+            
+                 <!-- ====== modal box Start===== -->
+                 <div class="modal fade modal-lg" data-bs-backdrop="static" id="taj">
+                  <div class="modal-dialog  modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+                          <img
+                            src="../IMAGES/logo-.png"
+                            width="70px"
+                            height="60px"
+                            alt="logo"
+                            id="logo-img"
+                          />
+                          <span class="text-dark">Historical</span>
+                          <span class="fw-bold text-primary">Monuments</span></a
+                        >
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                      <div class="modal-body">  The
+                        main building is constructed primarily of white marble and is
+                        adorned with intricate inlay work of semi-precious stones,
+                        calligraphy, and decorative motifs.
+                        The central dome is one of the
+                        most striking features of the Taj Mahal. It reaches a height of 73
+                        meters (240 feet) and is surrounded by four smaller domes. <br />
+                        <span class="fw-bold">Significance:</span> <br />
+            
+                        The Taj Mahal is a symbol of love and is often described as one of
+                        the most beautiful expressions of love in the world. Shah Jahan
+                        built it as a tribute to his beloved wife, Mumtaz Mahal, whom he
+                        held in great esteem. It is also considered an architectural
+                        marvel and a testament to the grandeur of the Mughal Empire during
+                        its peak. <br />
+                        <span class="fw-bold">UNESCO World Heritage Site:</span> <br />
+            
+                        The Taj Mahal was designated as a UNESCO World Heritage Site in
+                        1983 in recognition of its cultural and historical significance.
+                        Tourism and Global Icon: The Taj Mahal is a major tourist
+                        attraction and is visited by millions of tourists from around the
+                        world each year. It is often regarded as one of the Seven Wonders
+                        of the World and is featured prominently in countless works of
+                        literature, art, and popular culture. &#9827;
+                      </p>
+                     
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-dismiss="modal">
+                          Cancel
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ====== modal box End===== -->
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <p>
+            <span class="fw-bold">The Safdarjung Tomb</span> is a historical monument located in New Delhi,
+            India. It is often compared to the famous Mughal architectural
+            masterpiece, the Humayun's Tomb, due to its similar architectural
+            style. Here is a brief history of the Safdarjung Tomb: <br>
+            <span class="fw-bold">Construction:</span> <br> The Safdarjung Tomb was built in 1754 by Nawab
+            Shuja-ud-Daula, the son of Mirza Muqim Abul Mansur Khan, who held
+            the title of Safdarjung. Nawab Shuja-ud-Daula served as the Prime
+            Minister of the Mughal Empire under Emperor Ahmad Shah Bahadur.
+            The tomb was constructed in honor of Safdarjung, who was a
+            prominent figure in the Mughal court during the 18th century. <br>
+            <span class="fw-bold">Architectural Style:</span> <br> The tomb is an excellent example of Mughal
+            garden tomb architecture, characterized by a large, ornamental
+            garden surrounding the central tomb structure.  <br>
+            <button class="btn btn-primary" data-bs-target="#safdar" data-bs-toggle="modal">Learn more</button>
+            
+            
+                  <!-- ====== modal box Start===== -->
+                  <div class="modal fade modal-lg" data-bs-backdrop="static" id="safdar">
+                    <div class="modal-dialog  modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+                            <img
+                              src="../IMAGES/logo-.png"
+                              width="70px"
+                              height="60px"
+                              alt="logo"
+                              id="logo-img"
+                            />
+                            <span class="text-dark">Historical</span>
+                            <span class="fw-bold text-primary">Monuments</span></a
+                          >
+                          <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                          It features a
+                          central mausoleum made of sandstone and marble, which is designed
+                          in the Mughal architectural style. 
+                          The structure is topped with a
+                          beautiful bulbous dome and adorned with intricate carvings and
+                          decorative elements. The garden surrounding the tomb is laid out
+                          in the charbagh (four-part) style, with geometrically arranged
+                          pathways, water channels, and lush greenery. <br> <span class="fw-bold"> Significance:</span> <br> The
+                          Safdarjung Tomb is significant not only as a historical monument
+                          but also as a representation of the late Mughal architectural
+                          style during the decline of the Mughal Empire. It is often
+                          referred to as the "last flicker in the lamp of Mughal
+                          architecture" due to its construction during a period when Mughal
+                          architectural glory was waning. <br> <span class="fw-bold">UNESCO World Heritage Site:</span> <br> The
+                          Safdarjung Tomb is not designated as a UNESCO World Heritage Site,
+                          unlike some other Mughal-era monuments in India. However, it
+                          remains an important historical and architectural attraction in
+                          Delhi. <br> <span class="fw-bold"> Tourism:</span> <br> Today, the Safdarjung Tomb and its surrounding
+                          garden are open to the public and attract tourists interested in
+                          history and architecture. It offers a serene and picturesque
+                          setting in the heart of New Delhi, making it a popular spot for
+                          visitors and locals alike. The Safdarjung Tomb is a testament to
+                          the architectural legacy of the Mughal era and stands as a
+                          historical and cultural heritage site in the Indian capital of
+                          Delhi. It is an example of the grand garden tombs that were
+                          popular during the Mughal period and provides insight into the
+                          architectural styles of the 18th century in India. &#9827;
+                        </p>
+                       
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-primary" data-bs-dismiss="modal">
+                            Cancel
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ====== modal box End===== -->
+        </div>
+        <div class="col-lg-6 col-md-12 col-md-12">
+          <img
+          src="../IMAGES/safdarjung tomb1.jpeg"
+          width="100%"
+          height="400px"
+          alt="" class="rounded rounded-pill" title="The Safdarjung Tomb"
+          data-aos="fade-up" data-aos-duration="1200"/>
+        <br />
+        <span class="fst-italic text"> The Safdarjung Tomb</span>
+        </div>
+      </div>
+          
+
+      <div class="row mt-5 mb-3">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <img
+          src="../IMAGES/qutub-minar-3.jpg"
+          width="100%"
+          height="400px" class="rounded"
+          alt="" title="The Qutub Minar"
+          data-aos="fade-up" data-aos-duration="1200" />
+        <br />
+        <span class="fst-italic text"> The Qutub Minar</span>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <p>
+           <span class="fw-bold"> The Qutub Minar</span> is a historical monument located in Delhi, India, and is one of the most iconic landmarks in the country. It has a rich history and architectural significance. Here's a brief history of the Qutub Minar: <br>
+
+           <span class="fw-bold"> Construction:</span> <br>
+            
+            The Qutub Minar was built in the 12th century during the rule of the Delhi Sultanate. Construction began in 1192 by Qutb-ud-din Aibak, who was the founder of the Delhi Sultanate and a military general under Muhammad Ghori, the ruler of the Ghurid Empire.
+            Qutb-ud-din Aibak only completed the construction of the first storey during his lifetime. After his death, his successor, Iltutmish, added three more storeys to the tower, making it a five-story structure. <br>
+            <span class="fw-bold">Architectural Style:</span> <br>
+            
+            The Qutub Minar is a prime example of Indo-Islamic architecture. It combines elements of Islamic and Indian architectural styles.
+           
+            <button class="btn btn-primary" data-bs-target="#qutub" data-bs-toggle="modal">Learn more</button>
+
+               <!-- ====== modal box Start===== -->
+               <div class="modal fade modal-lg" data-bs-backdrop="static" id="qutub">
+                <div class="modal-dialog  modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <a class="navbar-brand ms-5 text-sm-break" href="#" id="logo">
+                        <img
+                          src="../IMAGES/logo-.png"
+                          width="70px"
+                          height="60px"
+                          alt="logo"
+                          id="logo-img"
+                        />
+                        <span class="text-dark">Historical</span>
+                        <span class="fw-bold text-primary">Monuments</span></a
+                      >
+                      <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                     <p>  The tower is made primarily of red sandstone and marble and features intricate carving and calligraphy. The architectural details include verses from the Quran and decorative motifs.
+                      <span class="fw-bold">Height and Dimensions:</span> <br>
+                      
+                      The Qutub Minar stands at a height of approximately 73 meters (240 feet) and tapers from the base to the top. <br> The tower has a diameter of 14.3 meters at the base and tapers to 2.7 meters at the top.
+                      <span class="fw-bold"> Significance:</span> <br>
+                       
+                       The Qutub Minar was originally built as a victory tower to commemorate the military successes of the Delhi Sultanate. The construction of such tall minarets was a common practice in the Islamic world during this period.
+                       It is also believed that the Qutub Minar was used for the call to prayer (adhan) from the top storey. <br>
+                      <span class="fw-bold"> UNESCO World Heritage Site:</span> <br>
+                       
+                       The Qutub Minar complex, which includes several other historical and architectural structures, was designated as a UNESCO World Heritage Site in 1993.   &#9827;
+                       </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-dismiss="modal">
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ====== modal box End===== -->
+        </div>
+      </div>
+    </div>
+
+    <!-- =====East section End===== -->
+   
+
+   <!-- =====Footer section Start ======--->
+   <footer class="footer">
+    <div class="container-fluid bg-dark p-0">
+      <div class="container bg-dark">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="../IMAGES/logo-.png" alt="logo" id="footer-logo" />
+            <br />
+            <span class="text-white fs-3">Historical</span>
+            <span class="fw-bold text-primary fs-3">Monuments</span>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="contact p-0">
+              <h1 class="text-white fs-5 mb-4" id="footer-head">
+                Contact Us
+              </h1>
+              <a href="#" id="footer-links"
+                ><li class="text-white list-unstyled" id="contact-links">
+                  <i class="fa fa-location-arrow"></i>&emsp;Apwa Complex
+                  Garden East Karachi
+                </li></a
+              >
+              <a href="mailto:Historicalmonuments.com" id="footer-links"
+                ><li class="text-white list-unstyled" id="contact-links">
+                  <i class="fa fa-envelope"></i>&emsp;Historicalmonuments.com
+                </li></a
+              >
+              <li class="text-white list-unstyled" id="contact-links">
+                <i class="fa fa-phone"></i>&emsp;031182888888
+              </li>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="subscribe">
+              <a href="../History in PDF/Site map.docx" class="text-white" id="site-map">Site-map</a> <br><br>
+              <h1 class="text-white fs-5" id="footer-head">Subscribe</h1>
+              <input
+                type="email"
+                name=""
+                id="sub_email"
+                class="form-control mt-1"
+                placeholder="Email"
+              required=""/>
+              <button class="btn btn-primary mt-4" onclick="subscribe()">Subscribe</button>
+           
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a href="https://web.facebook.com/" target="_blank"
+            ><img
+              src="../IMAGES/facebook-icon.png"
+              width="60px"
+              height=""
+              alt=""
+              id="icon"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img
+              src="../IMAGES/instagram-icon.png"
+              width="60px"
+              height=""
+              alt=""
+              id="icon"
+          /></a>
+          <a href="https://twitter.com/" target="_blank"
+            ><img
+              src="../IMAGES/twitter-icon.png"
+              width="60px"
+              height=""
+              alt=""
+              id="icon"
+          /></a>
+        </div>
+        <hr class="text-white" />
+        <div class="text-center">
+          <span class="text-white" id="copy-all"
+            >&copy;All Right Reserved</span
+          >
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====Footer section End ======--->
+
+    <!-- jquery cdn start -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- jquery cdn end -->
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ======AOS  Animation on Scroll ======= -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- ======AOS Animation on Scroll ======= -->
+
+  <script src="../JAVASCRIPT/script.js"></script>
+  </body>
+</html>
