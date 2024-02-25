@@ -21,7 +21,6 @@ function submitted() {
 
 //LocalStorage for Feedback page End
 
-
 //LocalStorage for Contact us page start
 
 function M_submit() {
@@ -56,7 +55,7 @@ function subscribe() {
 }
 //Condition for subscribe code End
 
-//ScrolltoTop start 
+//ScrolltoTop start
 
 function toggleScrollButton() {
   const ScrolltoTop = document.getElementById("scroll-top");
@@ -102,22 +101,19 @@ const type = new Typed(".auto-type", {
 
 // typed js code End
 
-//User help prompt start 
+//User help prompt start
 
-function gethelp(){
-   setTimeout(function(){
-    let set = prompt("How we can help you, Feel free to ask?")
-  if(set){
-    alert("Your message has been recorded, We will get back you soon")
-  }else{
-  }
-  localStorage.setItem("User_Help",set)
-  localStorage.getItem("User_Help")
-},
-5000
-)
+function gethelp() {
+  setTimeout(function () {
+    let set = prompt("How we can help you, Feel free to ask?");
+    if (set) {
+      alert("Your message has been recorded, We will get back you soon");
+    } else {
+    }
+    localStorage.setItem("User_Help", set);
+    localStorage.getItem("User_Help");
+  }, 5000);
 }
-
 
 //User help prompt End
 
@@ -126,7 +122,7 @@ $(window).ready(function () {
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll > 200) {
-      $(".container-fluid").css("background", "0a131d");
+      $(".container-fluid").css("background", "#0a131d");
       $(".container-fluid").css("transition", "0.40s");
     } else {
       $(".container-fluid").css("background", "transparent");
@@ -145,123 +141,104 @@ function search() {
   } else if (search == "west" || search == "West" || search == "WEST") {
     window.location.href = "index.html#explore-history";
     document.getElementById("search").value = "";
-  } else if (
-    search == "North" ||
-    search == "NORTH" ||
-    search == "north"
-  ) {
+  } else if (search == "North" || search == "NORTH" || search == "north") {
     window.location.href = "index.html#explore-history";
     document.getElementById("search").value = "";
-  } else if (
-    search == "South" ||
-    search == "south" ||
-    search == "SOUTH"
-  ) {
+  } else if (search == "South" || search == "south" || search == "SOUTH") {
     window.location.href = "index.html#mascat";
     document.getElementById("search").value = "";
   } else {
-    alert(
-      "No historical monument found, please try different search term!"
-    );
+    alert("No historical monument found, please try different search term!");
     document.getElementById("search").value = "";
   }
 }
 
 // For searching filter End
 
-// Add like feature in Gallery images start 
+// Add like feature in Gallery images start
 
-  let icon = document.getElementById("heart")
-  
-  function showlove(){
-    icon.style.opacity = "1"
-    icon.style.scale = "1.30"
-    icon.style.transition = "0.40s"
+let icon = document.getElementById("heart");
 
-    setTimeout(function(){
-      icon.style.opacity = "0"
-    icon.style.scale = "1"
-    icon.style.transition = "1s"
-    },2000
-    )
-  }
+function showlove() {
+  icon.style.opacity = "1";
+  icon.style.scale = "1.30";
+  icon.style.transition = "0.40s";
 
-  let icon2 = document.getElementById("heart2")
-  
-  function showlove2(){
-    icon2.style.opacity = "1"
-    icon2.style.scale = "1.30"
-    icon2.style.transition = "0.40s"
+  setTimeout(function () {
+    icon.style.opacity = "0";
+    icon.style.scale = "1";
+    icon.style.transition = "1s";
+  }, 2000);
+}
 
-    setTimeout(function(){
-      icon2.style.opacity = "0"
-    icon2.style.scale = "1"
-    icon2.style.transition = "1s"
-    },2000
-    )
-  }
+let icon2 = document.getElementById("heart2");
 
-  
-  let icon3 = document.getElementById("heart3")
-  
-  function showlove3(){
-    icon3.style.opacity = "1"
-    icon3.style.scale = "1.30"
-    icon3.style.transition = "0.40s"
+function showlove2() {
+  icon2.style.opacity = "1";
+  icon2.style.scale = "1.30";
+  icon2.style.transition = "0.40s";
 
-    setTimeout(function(){
-      icon3.style.opacity = "0"
-    icon3.style.scale = "1"
-    icon3.style.transition = "1s"
-    },2000
-    )
-  }
+  setTimeout(function () {
+    icon2.style.opacity = "0";
+    icon2.style.scale = "1";
+    icon2.style.transition = "1s";
+  }, 2000);
+}
 
-  let icon4 = document.getElementById("heart4")
-  
-  function showlove4(){
-    icon4.style.opacity = "1"
-    icon4.style.scale = "1.30"
-    icon4.style.transition = "0.40s"
+let icon3 = document.getElementById("heart3");
 
-    setTimeout(function(){
-      icon4.style.opacity = "0"
-    icon4.style.scale = "1"
-    icon4.style.transition = "1s"
-    },2000
-    )
-  }
+function showlove3() {
+  icon3.style.opacity = "1";
+  icon3.style.scale = "1.30";
+  icon3.style.transition = "0.40s";
 
-  let icon5 = document.getElementById("heart5")
-  
-  function showlove5(){
-    icon5.style.opacity = "1"
-    icon5.style.scale = "1.30"
-    icon5.style.transition = "0.40s"
+  setTimeout(function () {
+    icon3.style.opacity = "0";
+    icon3.style.scale = "1";
+    icon3.style.transition = "1s";
+  }, 2000);
+}
 
-    setTimeout(function(){
-      icon5.style.opacity = "0"
-    icon5.style.scale = "1"
-    icon5.style.transition = "1s"
-    },2000
-    )
-  }
- 
-  let icon6 = document.getElementById("heart6")
-  
-  function showlove6(){
-    icon6.style.opacity = "1"
-    icon6.style.scale = "1.30"
-    icon6.style.transition = "0.40s"
+let icon4 = document.getElementById("heart4");
 
-    setTimeout(function(){
-      icon6.style.opacity = "0"
-    icon6.style.scale = "1"
-    icon6.style.transition = "1s"
-    },2000
-    )
-  }
- 
-// Add like feature in Gallery images End 
+function showlove4() {
+  icon4.style.opacity = "1";
+  icon4.style.scale = "1.30";
+  icon4.style.transition = "0.40s";
 
-   
+  setTimeout(function () {
+    icon4.style.opacity = "0";
+    icon4.style.scale = "1";
+    icon4.style.transition = "1s";
+  }, 2000);
+}
+
+let icon5 = document.getElementById("heart5");
+
+function showlove5() {
+  icon5.style.opacity = "1";
+  icon5.style.scale = "1.30";
+  icon5.style.transition = "0.40s";
+
+  setTimeout(function () {
+    icon5.style.opacity = "0";
+    icon5.style.scale = "1";
+    icon5.style.transition = "1s";
+  }, 2000);
+}
+
+let icon6 = document.getElementById("heart6");
+
+function showlove6() {
+  icon6.style.opacity = "1";
+  icon6.style.scale = "1.30";
+  icon6.style.transition = "0.40s";
+
+  setTimeout(function () {
+    icon6.style.opacity = "0";
+    icon6.style.scale = "1";
+    icon6.style.transition = "1s";
+  }, 2000);
+}
+
+// Add like feature in Gallery images End
